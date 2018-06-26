@@ -1,0 +1,16 @@
+div ul li a::before {
+    content: "|";
+}
+
+.img-standard-size {
+    width: 80%;
+}
+
+.white-letters {
+    color:whitesmoke;
+    
+}
+
+.button {
+    margin: auto;
+}
