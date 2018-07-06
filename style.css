@@ -1,16 +1,57 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+}
 div ul li a::before {
-    content: "|";
+    content: "  | ";
+}
+
+div ul li a {
+   color: white; 
+}
+
+.active {
+    color: green;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 16;
+    width: 100%;
 }
 
 .img-standard-size {
-    width: 80%;
+    width: 100%;
 }
 
-.white-letters {
-    color:whitesmoke;
-    
+.container {
+    padding-top: 82px;
+    height: 100%;
 }
 
-.button {
+form {
+    display: block;
     margin: auto;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('cover-images/sea.jpg');
+
+    /* Full height */
+    height: 50%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-style {
+    height: 50%;
+    background-color: white;
+    font-size:16px;
+    color: #2C2E35;
+    padding: 15px;
 }
