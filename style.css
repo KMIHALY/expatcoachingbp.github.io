@@ -6,27 +6,49 @@ div ul li a::before {
     content: "  | ";
 }
 
-div ul li a {
-   color: white; 
+/* div ul li a {
+   color: #ddd4c5;  
+  
+} */
+
+/* a:link, a:visited { 
+    color: #ddd4c5;
+    cursor: auto;
+}
+
+.nav-link {
+    color: #ddd4c5;
+}
+
+a:link:active, a:visited:active { 
+    color: #730e00;
 }
 
 .active {
     color: green;
-}
-
+} 
+*/
 .navbar {
     position: fixed;
     z-index: 16;
     width: 100%;
+    margin: 0px;
+    
 }
 
-.img-standard-size {
-    width: 100%;
+.bg-navbar {
+    background-color: #fc6816;
 }
+
+/* .img-standard-size {
+    background-size: contain;
+}  */
 
 .container {
+    padding: 0px;
     padding-top: 82px;
     height: 100%;
+    width: 100%;
 }
 
 form {
@@ -36,7 +58,7 @@ form {
 
 .parallax {
     /* The image used */
-    background-image: url('cover-images/sea.jpg');
+    background-image: url('pictures/1200px-Lanchid_Budapest.jpg');
 
     /* Full height */
     height: 50%; 
@@ -49,9 +71,23 @@ form {
 }
 
 .div-style {
-    height: 50%;
-    background-color: white;
+    height: fit-content;
+    background-color: whitesmoke;
     font-size:16px;
     color: #2C2E35;
-    padding: 15px;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.item {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#hiddenNav {
+    position: absolute;
+    z-index: 15;
 }
