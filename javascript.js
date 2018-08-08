@@ -1,2 +1,3 @@
-// let windowHeight = $(window).height() - 56;    
-// $('.container').css('height', windowHeight + 'px');
+$(document).ready( function() {
+    $('[data-toggle="tooltip"]').tooltip();
+});
