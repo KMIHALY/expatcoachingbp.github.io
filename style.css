@@ -54,7 +54,8 @@ form {
     height: fit-content;
     background-color: whitesmoke;
     font-size:16px;
-    color: #2C2E35;
+    /* color: #2C2E35; */
+    color: black;
     padding: 50px;
     padding-top: 62px;
 }
@@ -109,7 +110,7 @@ h1 {
     transition-duration: 1.5s;
 }
 
-/* image gallery css */
+/* image gallery css at survival kits*/
 
 .thumbnail {
     position: relative;
@@ -146,4 +147,81 @@ h1 {
 .thumbnail a.btn {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+}
+
+/* second type image gallery at survival kits */
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.containerImg {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.pContact {
+    text-align: center;
+}
+
+/* contact form STARTS HERE */
+
+
+#form_container
+{
+	padding:15px 15px;
+    background: grey;	
+    border-radius: 4px;
+    margin: auto;
+    /* margin-top:15px; */
+}
+
+#contactButton {
+    display: block;
+    margin: auto;
+}
+
+.noTopMargin {
+    margin-top: 0px;
+    padding-top: 0px;
 }
