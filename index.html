@@ -9,6 +9,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="shortcut icon" href="pictures/favicon3.ico" type="image/x-icon">
     <link rel="icon" href="pictures/favicon3.ico" type="image/x-icon">
@@ -18,118 +19,87 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
-        <a class="navbar-brand" href="#">EXPAT COACHING BUDAPEST</a>
-        <button id="navBarButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <a class="navbar-brand" href="#">EXPAT COACHING BUDAPEST</a>
+        <button id="navBarButton" class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+     
+                <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link" href="#">
+                        <img src="pictures/glyphicons/glyphicons-21-home.png" class="glyphIcon3" alt="home">
+                        Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link"  href="#about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#coaches">Coaches</a>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link"  href="#coaches">Coaches</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link"  href="#services">Services</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#survivalKits">Survival Kits</a>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link"  href="#survivalKits">Survival Kits</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                     <a class="nav-link" href="#events">Events</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacts</a>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link"  href="#contact">Contacts</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#prices">Prices</a>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link"  href="#prices">Prices</a>
                 </li>
+
+                <li class="dropdown language-selector noBullet">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                            <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
+                        </a>
+                        <ul class="dropdown-menu" id="bg-languages">
+                            <li>
+                                <a href="#">
+                                    <img src="pictures/flags/PNG/128/53150 - de so.png" />
+                                    <span>Deutsch</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
+                                    <span>English</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="pictures/flags/PNG/128/french.png" />
+                                    <span>Française</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="pictures/flags/PNG/256/53190 - hu mr.png" />
+                                    <span>Magyar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="pictures/flags/PNG/russian_language_hooligans.png" />
+                                    <span>Pусский</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
             </ul>
         </div>
+       
 
-        <!-- <li class="dropdown language-selector">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
-                  <img src="assets/images/flag-uk.png" />
-                </a>
-                <ul class="dropdown-menu pull-right">
-                  <li>
-                    <a href="#">
-                      <img src="assets/images/flag-de.png" />
-                      <span>Deutsch</span>
-                    </a>
-                  </li>
-                  <li class="active">
-                    <a href="#">
-                      <img src="assets/images/flag-uk.png" />
-                      <span>English</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="assets/images/flag-fr.png" />
-                      <span>François</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="assets/images/flag-al.png" />
-                      <span>Shqip</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="assets/images/flag-es.png" />
-                      <span>Español</span>
-                    </a>
-                  </li>
-                </ul>
-              </li> -->
-
-        <!-- <li class="dropdown language-selector">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
-                <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
-            </a>
-            <ul class="dropdown-menu pull-right">
-                <li>
-                    <a href="#">
-                        <img src="pictures/flags/PNG/128/53150 - de so.png" />
-                        <span>Deutsch</span>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="#">
-                        <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
-                        <span>English</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="pictures/flags/PNG/128/french.png" />
-                        <span>Française</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="pictures/flags/PNG/256/53190 - hu mr.png" />
-                        <span>Hungarian</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="pictures/flags/PNG/russian_language_hooligans.png" />
-                        <span>Pусский</span>
-                    </a>
-                </li>
-            </ul>
-        </li> -->
     </nav>
     <!-- Carousel image changer -->
     <div class="container">
@@ -252,7 +222,7 @@
 
     <div id="survivalKits" class="div-style">
         <h1>Survival Kits</h1>
-        <p>We are trying to help You with this reminder pics that you can download, so it will be always be on your phone.</p>
+        <p>We are trying to help You with these reminder pics that you can download, so it will be always be on your phone.</p>
 
         <!-- image gallery -->
 
@@ -279,6 +249,11 @@
                             <br> In contrast to London where it is clearly stated whether a service or platform is Northbound
                             or Southbound, tourists and first-timers struggle finding out whether Keleti or Kelenföld is
                             the Northeastbound platform...</p>
+                        <div>
+                            <a href="pictures/survival_kit/budapest_compass.png" download="budapest_compass">
+                                <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyphIcon" alt="download">
+                            </a>
+                        </div>
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                     </div>
                 </div>
@@ -288,6 +263,11 @@
                     <div class="card-body">
                         <p class="card-text">BALATON 101 - A few bits of info about the 'Hungarian Sea' that everyone here knows, so you might
                             need to know, as well.</p>
+                        <div>
+                            <a href="pictures/survival_kit/balaton101.png" download="balaton101">
+                                <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyphIcon" alt="download">
+                            </a>
+                        </div>
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                     </div>
                 </div>
@@ -342,18 +322,28 @@
             <div class="col-md-6 form-line">
                 <p class="pContact">
                     <br>
-                    <strong> Tiboldi Dorottya (HU, EN, FR)</strong>
-                    <br> 003630/ 64-28-574
-                    <br> dorottya@expatcoachingbud.com
+                    <strong> Dorottya Tiboldi (HU, EN, FR)</strong>
+                    <br> 
+                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone">
+                    003630/ 64-28-574
+                    <br>
+                    <a href="mailto:dorottya@expatcoachingbud.com">
+                        <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyphIcon2" alt="e-mail"> dorottya@expatcoachingbud.com
+                    </a>
                 </p>
             </div>
             <div class="col-md-6">
 
                 <p class="pContact">
                     <br>
-                    <strong>Matyi Csongor (HU, EN)</strong>
-                    <br> 003620/ 256-57-88
-                    <br> csongor@expatcoachingbud.com
+                    <strong>Csongor Matyi (HU, EN)</strong>
+                    <br> 
+                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone">
+                    003620/ 256-57-88
+                    <br>
+                    <a href="mailto:csongor@expatcoachingbud.com">
+                        <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyphIcon2" alt="e-mail"> csongor@expatcoachingbud.com
+                    </a>
                 </p>
             </div>
         </div>
@@ -434,6 +424,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="javascript.js"></script>
+
     <!-- <script src="form.js"></script> -->
 </body>
 
