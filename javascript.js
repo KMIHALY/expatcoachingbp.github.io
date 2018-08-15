@@ -11,11 +11,10 @@ function openImg(imgs) {
 }
 
 $(document).ready(toggleBrand);
-
 $(window).resize(toggleBrand);
 
 function toggleBrand() {
-    if ($(window).width() < 400) {
+    if ($(window).width() < 420) {
         $("#brand").hide();
     } else {
         $("#brand").show();
