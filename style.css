@@ -42,13 +42,26 @@ img {
     float: right;
 } */
 
-.container {
+
+.coverContainer {
     padding: 0px;
     padding-top: 56px;
     margin: 0px;
     height: 100%;
     width: 100%;
-    /* background-size: cover; */
+}
+
+.coachPhoto {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.coachName {
+    font-size: 22px;
+}
+
+.topSpace {
+    margin-top: 20px;
 }
 
 form {
@@ -307,9 +320,13 @@ h1 {
 .glyphIcon {
     width: 25px;
     height: 25px;
-    margin: auto;
     position: relative;
     display: inline-block;
+}
+
+.glyphContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .glyphIcon2 {
@@ -338,6 +355,14 @@ li > a > img {
     margin-left: 15px;
     padding: 0;
     position: relative;
+}
+
+.dropdown-toggle::after {
+    vertical-align: 0px;
+}
+
+a#languageButton:hover {
+    text-decoration: none;
 }
 
 /* contact form STARTS HERE  */

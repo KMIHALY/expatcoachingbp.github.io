@@ -19,8 +19,8 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
-            <a class="navbar-brand" href="#">EXPAT COACHING BUDAPEST</a>
-        <button id="navBarButton" class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent"
+        <a class="navbar-brand" href="#" id="brand">EXPAT COACHING BUDAPEST</a>
+        <button id="navBarButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,80 +29,79 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-     
+
                 <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse">
                     <a class="nav-link" href="#">
-                        <img src="pictures/glyphicons/glyphicons-21-home.png" class="glyphIcon3" alt="home">
-                        Home
+                        <img src="pictures/glyphicons/glyphicons-21-home.png" class="glyphIcon3" alt="home"> Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                    <a class="nav-link"  href="#about">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                    <a class="nav-link"  href="#coaches">Coaches</a>
+                    <a class="nav-link" href="#coaches">Coaches</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                    <a class="nav-link"  href="#services">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                    <a class="nav-link"  href="#survivalKits">Survival Kits</a>
+                    <a class="nav-link" href="#survivalKits">Survival Kits</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                     <a class="nav-link" href="#events">Events</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                    <a class="nav-link"  href="#contact">Contacts</a>
+                    <a class="nav-link" href="#contact">Contacts</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                    <a class="nav-link"  href="#prices">Prices</a>
+                    <a class="nav-link" href="#prices">Prices</a>
                 </li>
 
                 <li class="dropdown language-selector noBullet">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
-                            <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
-                        </a>
-                        <ul class="dropdown-menu" id="bg-languages">
-                            <li>
-                                <a href="#">
-                                    <img src="pictures/flags/PNG/128/53150 - de so.png" />
-                                    <span>Deutsch</span>
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="#">
-                                    <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
-                                    <span>English</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="pictures/flags/PNG/128/french.png" />
-                                    <span>Française</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="pictures/flags/PNG/256/53190 - hu mr.png" />
-                                    <span>Magyar</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="pictures/flags/PNG/russian_language_hooligans.png" />
-                                    <span>Pусский</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <a href="#" id="languageButton" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                        <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
+                    </a>
+                    <ul class="dropdown-menu" id="bg-languages">
+                        <li>
+                            <a href="#">
+                                <img src="pictures/flags/PNG/128/53150 - de so.png" />
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="pictures/flags/PNG/128/french.png" />
+                                <span>Française</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="pictures/flags/PNG/256/53190 - hu mr.png" />
+                                <span>Magyar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="pictures/flags/PNG/russian_language_hooligans.png" />
+                                <span>Pусский</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
-       
+
 
     </nav>
     <!-- Carousel image changer -->
-    <div class="container">
+    <div class="coverContainer">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3500">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -166,114 +165,121 @@
 
     <div id="coaches" class="div-style">
         <h1>Coaches</h1>
-        <p>
-            <strong> Dorottya Tiboldi</strong>
-            <br> psychologist and family therapist
-            <br> integrative child therapist in formation
-        </p>
-        <p>I obtained my master’s degree at the Université Libre de Bruxelles in psychology, specialized in clinical psychology.
-            Since then I have gained experience in various fields, such as child and adolescent psychiatry and worked in
-            consultation centers for children and their parents. Already at university I was fascinated by family therapy,
-            an approach that considers the individual as part of its social environment and takes into account patterns and
-            family history. After my degree I was trained in family therapy and currently I pursue studies in integrative
-            child psychotherapy. The latter one unifies multiple therapeutic approaches and focuses on the values and resources
-            of the individual while taking into account emotional, behavioural, cognitive, and physiological aspects. As
-            confidence is of high importance in therapy, I do my best to provide a trustful and constructive environment.
-            My consultations are open to anyone experiencing a moment of hardship: family and relationship issues, difficulties
-            with adaptation, lack of self confidence… My counsellings are addressed to parents and couples, and I also provide
-            individual consutations for adults, adolescents and children. For further enquiries feel free to contact me via
-            phone or e-mail.
+        <div class="container">
+            <div class="row">
+                <img src="pictures/coaches/td.jpg" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coachPhoto" alt="photo of Dorottya Tiboldi">
+                <div class="col-xs-12 col-sm-10 col-md-6 col-lg-8 col-xl-9">
+                        <span class="coachName"> <strong>Dorottya Tiboldi</strong> </span>
+                        <li>psychologist and family therapist </li>
+                        <li>integrative child therapist in formation </li>
+                        <br>
+                        <p>I obtained my master’s degree at the Université Libre de Bruxelles in psychology, specialized in
+                            clinical psychology. Since then I have gained experience in various fields, such as child and
+                            adolescent psychiatry and worked in consultation centers for children and their parents. Already
+                            at university I was fascinated by family therapy, an approach that considers the individual as
+                            part of its social environment and takes into account patterns and family history. After my degree
+                            I was trained in family therapy and currently I pursue studies in integrative child psychotherapy.
+                            The latter one unifies multiple therapeutic approaches and focuses on the values and resources
+                            of the individual while taking into account emotional, behavioural, cognitive, and physiological
+                            aspects. As confidence is of high importance in therapy, I do my best to provide a trustful and
+                            constructive environment. My consultations are open to anyone experiencing a moment of hardship:
+                            family and relationship issues, difficulties with adaptation, lack of self confidence… My counsellings
+                            are addressed to parents and couples, and I also provide individual consutations for adults,
+                            adolescents and children. For further enquiries feel free to contact me via phone or e-mail.</p>
+                        <a href="#contact" class="btn btn-primary">CONTACT</a>
+                </div>
 
-        </p>
-        <a href="#contact" class="btn btn-primary">CONTACT</a>
-        <br>
-        <p style="padding-top: 30px;">
-            <strong>Csongor Matyi</strong>
-            <br> psychologist, researcher, educator
-            <br> „No matter how long the storm lasts, the sun always shines behind the clouds.” – Khalil Gibran
-            <br>
+            </div>
+            <div class="row topSpace">
+                <img src="pictures/coaches/mcs.png" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coachPhoto" alt="photo of Csongor Matyi">
+                <div class="col-xs-12 col-sm-10 col-md-6 col-lg-8 col-xl-9">
+                    <span class="coachName"> <strong> Csongor Matyi</strong> </span>
+                    <li>psychologist, researcher, educator</li>
+                    <li>„No matter how long the storm lasts, the sun always shines behind the clouds.” – Khalil Gibran</li>
+                    <br>
+                    <p>As a counsellor my task is to help clients identify their strengths, move beyond challenging situations,
+                        and face difficult or threatening events. Sometimes an encouraging word does the trick, as listening
+                        with empathy can be an important step towards resolution. At other times objective advice, removed
+                        from emotion, helps. There are few hard and fast rules in counselling.</p>
 
-            <p>As a counsellor my task is to help clients identify their strengths, move beyond challenging situations, and
-                face difficult or threatening events. Sometimes an encouraging word does the trick, as listening with empathy
-                can be an important step towards resolution. At other times objective advice, removed from emotion, helps.
-                There are few hard and fast rules in counselling.</p>
+                    <p>But given attention, empathy, acceptance and respect, healing can start. Clients are supported in finding
+                        ways to connect with their inner strengths – present in each of us – no matter how dark the clouds
+                        are which blot out the inner light. I am a cognitive research psychologist graduate of ELTE University
+                        of Budapest. I constantly seek new ways to challenge people’s beliefs in order to help them live
+                        a more satisfying life.
+                        <br> I look forward to hearing from you.</p>
+                    <a href="#contact" class="btn btn-primary">CONTACT</a>
+                </div>
+            </div>
 
-            <p> But given attention, empathy, acceptance and respect, healing can start. Clients are supported in finding ways
-                to connect with their inner strengths – present in each of us – no matter how dark the clouds are which blot
-                out the inner light. I am a cognitive research psychologist graduate of ELTE University of Budapest. I constantly
-                seek new ways to challenge people’s beliefs in order to help them live a more satisfying life.
-                <br> I look forward to hearing from you.</p>
-            <a href="#contact" class="btn btn-primary">CONTACT</a>
-            <br>
-        </p>
-
+        </div>
     </div>
 
-    <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz"></div>
+        <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz"></div>
 
-    <div id="services" class="div-style">
-        <h1>Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum veniam eligendi itaque nostrum, consequuntur
-            beatae corrupti laudantium facere repudiandae tempora consequatur provident quae. Maiores qui fugiat cupiditate
-            labore at.</p>
-    </div>
-
-    <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz"></div>
-
-    <div id="survivalKits" class="div-style">
-        <h1>Survival Kits</h1>
-        <p>We are trying to help You with these reminder pics that you can download, so it will be always be on your phone.</p>
-
-        <!-- image gallery -->
-
-        <!-- The expanding image container -->
-        <div class="containerImg col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-            <!-- Expanded image -->
-            <img id="expandedImg" src="pictures/survival_kit/budapest_compass.png">
-
-            <!-- Image text -->
-            <div id="imgtext"></div>
+        <div id="services" class="div-style">
+            <h1>Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum veniam eligendi itaque nostrum, consequuntur
+                beatae corrupti laudantium facere repudiandae tempora consequatur provident quae. Maiores qui fugiat cupiditate
+                labore at.</p>
         </div>
 
-        <div class="container" style="padding-top: 0px">
-            <div class="row">
-                <div class="card card-body survivalKits col-xs-12 col-sm-8 col-md-6 col-lg-4">
-                    <h5 class="card-title">Budapest Compass</h5>
-                    <img src="pictures/survival_kit/budapest_compass.png" class="img-thumbnail" alt="A compass to Budapest" onclick="openImg(this);">
-                    <div class="card-body">
-                        <p class="card-text">It is a damn stupid thing that the directions of Budapest metro lines are not referred to as the
-                            points of compass they are heading, but by names no foreigner would ever understand.
-                            <br> In contrast to London where it is clearly stated whether a service or platform is Northbound
-                            or Southbound, tourists and first-timers struggle finding out whether Keleti or Kelenföld is
-                            the Northeastbound platform...</p>
-                        <div>
-                            <a href="pictures/survival_kit/budapest_compass.png" download="budapest_compass">
-                                <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyphIcon" alt="download">
-                            </a>
+        <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz"></div>
+
+        <div id="survivalKits" class="div-style">
+            <h1>Survival Kits</h1>
+            <p>We are trying to help You with these reminder pics that you can download, so it will be always be on your phone.</p>
+
+            <!-- image gallery -->
+
+            <!-- The expanding image container -->
+            <div class="containerImg col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                <!-- Expanded image -->
+                <img id="expandedImg" src="pictures/survival_kit/budapest_compass.png">
+
+                <!-- Image text -->
+                <div id="imgtext"></div>
+            </div>
+
+            <div class="container" style="padding-top: 0px">
+                <div class="row">
+                    <div class="card card-body survivalKits col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                        <h5 class="card-title">Budapest Compass</h5>
+                        <img src="pictures/survival_kit/budapest_compass.png" class="img-thumbnail" alt="A compass to Budapest" onclick="openImg(this);">
+                        <div class="card-body">
+                            <p class="card-text">It is a damn stupid thing that the directions of Budapest metro lines are not referred to as
+                                the points of compass they are heading, but by names no foreigner would ever understand.
+                                <br> In contrast to London where it is clearly stated whether a service or platform is Northbound
+                                or Southbound, tourists and first-timers struggle finding out whether Keleti or Kelenföld
+                                is the Northeastbound platform...</p>
+                            <div class="glyphContainer">
+                                <a href="pictures/survival_kit/budapest_compass.png" download="budapest_compass">
+                                    <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyphIcon" alt="download">
+                                </a>
+                            </div>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                     </div>
-                </div>
-                <div class="card card-body survivalKits col-xs-12 col-sm-8 col-md-6 col-lg-4">
-                    <h5 class="card-title">Guide to the lake Balaton</h5>
-                    <img src="pictures/survival_kit/balaton101.png" class="img-thumbnail" alt="Guide to the lake Balaton" onclick="openImg(this);">
-                    <div class="card-body">
-                        <p class="card-text">BALATON 101 - A few bits of info about the 'Hungarian Sea' that everyone here knows, so you might
-                            need to know, as well.</p>
-                        <div>
-                            <a href="pictures/survival_kit/balaton101.png" download="balaton101">
-                                <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyphIcon" alt="download">
-                            </a>
+                    <div class="card card-body survivalKits col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                        <h5 class="card-title">Guide to the lake Balaton</h5>
+                        <img src="pictures/survival_kit/balaton101.png" class="img-thumbnail" alt="Guide to the lake Balaton" onclick="openImg(this);">
+                        <div class="card-body">
+                            <p class="card-text">BALATON 101 - A few bits of info about the 'Hungarian Sea' that everyone here knows, so you might
+                                need to know, as well.</p>
+                            <div class="glyphContainer">
+                                <a href="pictures/survival_kit/balaton101.png" download="balaton101">
+                                    <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyphIcon" alt="download">
+                                </a>
+                            </div>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
     </div>
@@ -323,9 +329,8 @@
                 <p class="pContact">
                     <br>
                     <strong> Dorottya Tiboldi (HU, EN, FR)</strong>
-                    <br> 
-                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone">
-                    003630/ 64-28-574
+                    <br>
+                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone"> 003630/ 64-28-574
                     <br>
                     <a href="mailto:dorottya@expatcoachingbud.com">
                         <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyphIcon2" alt="e-mail"> dorottya@expatcoachingbud.com
@@ -337,9 +342,8 @@
                 <p class="pContact">
                     <br>
                     <strong>Csongor Matyi (HU, EN)</strong>
-                    <br> 
-                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone">
-                    003620/ 256-57-88
+                    <br>
+                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone"> 003620/ 256-57-88
                     <br>
                     <a href="mailto:csongor@expatcoachingbud.com">
                         <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyphIcon2" alt="e-mail"> csongor@expatcoachingbud.com
