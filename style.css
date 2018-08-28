@@ -7,13 +7,36 @@ body, html {
     content: "  | ";
 }
 
-#brand {
+/* #brand {
     color: rgb(247, 228, 188);
+} */
+
+.navbar-light .navbar-brand {
+    color: rgb(247, 228, 188);
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: rgba(247, 228, 188, 0.9);
+  }
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(247, 228, 188, 0.7); 
+     /* 0.5 */
+}
+  
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    /* color: rgba(247, 228, 188, 0.7); */
+    color: white;
+}
+  
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(247, 228, 188, 0.3);
 }
 
 img {
     height: 100%;
 }
+
 #navbar {
     position: fixed;
     z-index: 16;
@@ -86,11 +109,11 @@ form {
 .parallax {
     /* The image used */
     background-image: url('pictures/1200px-Lanchid_Budapest.jpg');
+
     /* greyscale */
     -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
     filter: grayscale(80%);
-    /* filter: opacity(80%); */
-
+    
     /* Full height */
     height: 50%; 
 
@@ -105,7 +128,6 @@ form {
     height: fit-content;
     background-color: whitesmoke;
     font-size:16px;
-    /* color: #2C2E35; */
     color: black;
     padding: 50px;
     padding-top: 62px;
@@ -315,8 +337,34 @@ a#languageButton:hover {
     text-decoration: none;
 }
 
+.btn-primary {
+    color: #000;
+    /* background-color: #007bff; */
+    /* border-color: #007bff; */
+    background-color: #ff9102;
+    border-color: #ff9102;
+    /* background-color: #611B45; */
+}
 
+/*a.btn-primary:hover {
+    color: #ff9102;
+    text-decoration: underline;
+}*/
+#lightcolor:hover {
+    color: #ffbb00;
+    text-decoration: underline;
+}
 
+#navbar {
+font-family: fontUbuntu;
+/* font-size: 1.0em;
+font-weight: bold; */
+}
+
+@font-face {
+font-family: fontUbuntu;
+src:  url(fonts/Ubuntu-Medium.ttf);
+}
 
 
 /* contact form STARTS HERE  */
