@@ -7,6 +7,9 @@ body, html {
     content: "  | ";
 }
 
+#brand {
+    color: rgb(247, 228, 188);
+}
 
 img {
     height: 100%;
@@ -43,7 +46,9 @@ img {
 } */
 
 .bg-navbar {
-    background-color: #fc6816;
+    /* background-color: #fc6816; */
+    /* background-color: #611B45; */
+    background-color: rgb(121, 8, 8);
 }
 
 #bg-languages {
@@ -81,6 +86,10 @@ form {
 .parallax {
     /* The image used */
     background-image: url('pictures/1200px-Lanchid_Budapest.jpg');
+    /* greyscale */
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
+    /* filter: opacity(80%); */
 
     /* Full height */
     height: 50%; 
