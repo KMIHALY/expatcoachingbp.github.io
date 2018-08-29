@@ -7,12 +7,16 @@ body, html {
     content: "  | ";
 }
 
+.hideBefore::before {
+    content:"";
+}
+
 /* #brand {
     color: rgb(247, 228, 188);
 } */
 
 .navbar-light .navbar-brand {
-    color: rgb(247, 228, 188);
+    color: #f7e4bc;
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
@@ -339,11 +343,8 @@ a#languageButton:hover {
 
 .btn-primary {
     color: #000;
-    /* background-color: #007bff; */
-    /* border-color: #007bff; */
-    background-color: #ff9102;
+    background-color: #b96b05;
     border-color: #ff9102;
-    /* background-color: #611B45; */
 }
 
 /*a.btn-primary:hover {
