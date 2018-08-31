@@ -30,34 +30,29 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-               <li class="nav-item active" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <a class="nav-link hideBefore" href="#about">
+                <li class="nav-item active" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <a class="nav-link hideBefore" href="#home" id="li-home">
+                        <img src="pictures/glyphicons/glyphicons-21-home_light.png" class="glyph-icon3" alt="home"> Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
-
-                    <a class="nav-link" href="#top">
-                        <img src="pictures/glyphicons/glyphicons-21-home_light.png" class="glyphIcon3" alt="home"> Home
-                    </a>
+                    <a class="nav-link" href="#about" id="li-about">About</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#coaches" id="li-coaches">Coaches</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <a class="nav-link" href="#coaches">Coaches</a>
+                    <a class="nav-link" href="#services" id="li-services">Services</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#survivalKits" id="li-survivalKits">Survival Kits</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <a class="nav-link" href="#survivalKits">Survival Kits</a>
+                    <a class="nav-link" href="#events" id="li-events">Events</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <a class="nav-link" href="#events">Events</a>
-                </li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <a class="nav-link" href="#contact">Contacts</a>
+                    <a class="nav-link" href="#contact" id="li-contact">Contacts</a>
                 </li>
 
                 <!-- <li class="nav-item dropdown">
@@ -73,8 +68,8 @@
             </ul>
         </div>
 
-        <li class="dropdown language-selector noBullet" id="languageButtonLI">
-            <a href="#" id="languageButton" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+        <li class="dropdown language-selector no-bullet" id="language-button-li">
+            <a href="#" id="language-button" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
                 <img src="pictures/flags/PNG/256/53139 - ck gw.png" />
             </a>
             <ul class="dropdown-menu" id="bg-languages">
@@ -115,7 +110,7 @@
     </nav>
 
     <!-- Carousel image changer -->
-    <div class="coverContainer" id="top">
+    <div class="cover-container" id="home">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3500">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -125,25 +120,25 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img id="makeThisCover" class="d-block" src="cover-images/carousel_a.jpg" alt="girl walking in the snowfall">
+                    <img class="d-block make-this-cover" src="cover-images/carousel_a.jpg" alt="girl walking in the snowfall">
                     <div class="carousel-caption">
                         first image
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img id="makeThisCover" class="d-block" src="cover-images/carousel_b.jpg" alt="three girls, one is pointing at something">
+                    <img class="d-block make-this-cover" src="cover-images/carousel_b.jpg" alt="three girls, one is pointing at something">
                     <div class="carousel-caption">
                         second image
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img id="makeThisCover" class="d-block" src="cover-images/carousel_c.jpg" alt="hands of a therapist and a patient">
+                    <img class="d-block make-this-cover" src="cover-images/carousel_c.jpg" alt="hands of a therapist and a patient">
                     <div class="carousel-caption">
                         third image
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img id="makeThisCover" class="d-block" src="cover-images/carousel_d.jpg" alt="girl on the field">
+                    <img class="d-block make-this-cover" src="cover-images/carousel_d.jpg" alt="girl on the field">
                     <div class="carousel-caption">
                         fourth image
                     </div>
@@ -181,9 +176,9 @@
         <h1>Coaches</h1>
         <div class="container">
             <div class="row">
-                <img src="pictures/coaches/td.jpg" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coachPhoto" alt="photo of Dorottya Tiboldi">
+                <img src="pictures/coaches/td.jpg" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coach-photo" alt="photo of Dorottya Tiboldi">
                 <div class="col-xs-12 col-sm-10 col-md-6 col-lg-8 col-xl-9">
-                    <span class="coachName">
+                    <span class="coach-name">
                         <strong>Dorottya Tiboldi</strong>
                     </span>
 
@@ -225,10 +220,11 @@
                 </div>
 
             </div>
-            <div class="row topSpace">
-                <img src="pictures/coaches/mcs.png" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coachPhoto" alt="photo of Csongor Matyi">
+            <hr>
+            <div class="row top-space">
+                <img src="pictures/coaches/mcs.png" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coach-photo" alt="photo of Csongor Matyi">
                 <div class="col-xs-12 col-sm-10 col-md-6 col-lg-8 col-xl-9">
-                    <span class="coachName">
+                    <span class="coach-name">
                         <strong> Csongor Matyi</strong>
                     </span>
                     <li>psychologist </li>
@@ -250,11 +246,11 @@
                     <a href="#contact" class="btn btn-primary">CONTACT</a>
                 </div>
             </div>
-
-            <div class="row topSpace">
-                <img src="pictures/coaches/mg.jpg" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coachPhoto" alt="photo of Masa Gorog">
+            <hr>
+            <div class="row top-space">
+                <img src="pictures/coaches/mg.jpg" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coach-photo" alt="photo of Masa Gorog">
                 <div class="col-xs-12 col-sm-10 col-md-6 col-lg-8 col-xl-9">
-                    <span class="coachName">
+                    <span class="coach-name">
                         <strong>Маша Герег (Görög Mása)</strong>
                     </span>
                     <li>Специалист по коммуникации</li>
@@ -278,8 +274,7 @@
                         консультации, коучинги. Я помогаю своим клиентам определить свою цель, пронять ситуацию, найти свой
                         путь. Коучинг это совместная работа, основанная на эмпатии и доверии.</p>
                     <p>Если в вашей жизни возникают такие же вопосы, не чувствуете себя хорошо в своей жизненной ситуации,
-                        возьмите дело в свои руки! С радостью помогу вам!
-                        <br> Звоните или пишите! Сделайте первый шаг именно сейчас!</p>
+                        возьмите дело в свои руки! С радостью помогу вам!</p>
                     <a href="#contact" class="btn btn-primary">CONTACT</a>
                 </div>
             </div>
@@ -303,9 +298,9 @@
         <!-- image gallery -->
 
         <!-- The expanding image container -->
-        <div class="containerImg col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
+        <div class="expanding-image-container col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
             <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <span onclick="this.parentElement.style.display='none'" class="close-button">&times;</span>
 
             <!-- Expanded image -->
             <img id="expandedImg" src="pictures/survival_kit/budapest_compass.png">
@@ -325,9 +320,9 @@
                             <br> In contrast to London where it is clearly stated whether a service or platform is Northbound
                             or Southbound, tourists and first-timers struggle finding out whether Keleti or Kelenföld is
                             the Northeastbound platform...</p>
-                        <div class="glyphContainer">
+                        <div class="glyph-container">
                             <a href="pictures/survival_kit/budapest_compass.png" download="budapest_compass">
-                                <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyphIcon" alt="download">
+                                <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyph-icon" alt="download">
                             </a>
                         </div>
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -339,9 +334,9 @@
                     <div class="card-body">
                         <p class="card-text">BALATON 101 - A few bits of info about the 'Hungarian Sea' that everyone here
                             knows, so you might need to know, as well.</p>
-                        <div class="glyphContainer">
+                        <div class="glyph-container">
                             <a href="pictures/survival_kit/balaton101.png" download="balaton101">
-                                <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyphIcon" alt="download">
+                                <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyph-icon" alt="download">
                             </a>
                         </div>
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -371,6 +366,8 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
+                            <!-- If you like to link to an other website (as an advertisement) OR have sg written in details 
+                                someswhere about this topic, use the button below -->
                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
                     </div>
@@ -392,46 +389,46 @@
 
     </div>
 
-    <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz"></div>
+    <div class="parallax" id="contact" title="Lánchid Budapest. Photo © François Guerraz"></div>
 
-    <div id="contact" class="div-style">
+    <div class="div-style">
         <h1>Contact</h1>
         <div class="row">
             <div class="col-md-4 form-line">
-                <p class="pContact">
+                <p class="contact-paragraph">
                     <br>
                     <strong>Dorottya Tiboldi (HU, EN, FR)</strong>
                     <br>
-                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone"> 003630/ 64-28-574
+                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyph-icon" alt="phone"> 003630/ 64-28-574
                     <br>
                     <a href="mailto:dorottya@expatcoachingbud.com">
-                        <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyphIcon2" alt="e-mail"> dorottya@expatcoachingbud.com
+                        <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyph-icon2" alt="e-mail"> dorottya@expatcoachingbud.com
                     </a>
                 </p>
             </div>
 
             <div class="col-md-4">
-                <p class="pContact">
+                <p class="contact-paragraph">
                     <br>
                     <strong>Csongor Matyi (HU, EN)</strong>
                     <br>
-                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone"> 003620/ 256-57-88
+                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyph-icon" alt="phone"> 003620/ 256-57-88
                     <br>
                     <a href="mailto:csongor@expatcoachingbud.com">
-                        <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyphIcon2" alt="e-mail"> csongor@expatcoachingbud.com
+                        <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyph-icon2" alt="e-mail"> csongor@expatcoachingbud.com
                     </a>
                 </p>
             </div>
 
             <div class="col-md-4 form-line">
-                <p class="pContact">
+                <p class="contact-paragraph">
                     <br>
                     <strong>Маша Герег (Görög Mása) (RU)</strong>
                     <br>
-                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyphIcon" alt="phone"> 003670/ 31-41-936
+                    <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyph-icon" alt="phone"> 003670/ 31-41-936
                     <br>
                     <a href="mailto:gorogmasha@gmail.com">
-                        <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyphIcon2" alt="e-mail"> gorogmasha@gmail.com
+                        <img src="pictures/glyphicons/glyphicons-11-envelope.png" class="glyph-icon2" alt="e-mail"> gorogmasha@gmail.com
                     </a>
                 </p>
             </div>
@@ -492,8 +489,9 @@
           </div> -->
     </div>
 
-
-
+    <footer class="bg-navbar footer">
+        Author: <a href="mailto: kaloczy.mihaly@gmail.com">Mihály Kálóczy</a>. © 2018.
+    </footer>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -503,6 +501,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Waypoint plugin -->
+    <script src="C:\Work\expatcoachingbp.github.io/waypoint/lib/jquery.waypoints.min.js"></script>
+
+    <!--  -->
     <script src="javascript.js"></script>
 
     <!-- <script src="form.js"></script> -->
