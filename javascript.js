@@ -7,7 +7,7 @@ $(document).ready(function () {
 function openImg(imgs) {
     $("#imgtext").text(imgs.alt);
     $("#expandedImg").attr("src", imgs.src);
-    $(".containerImg").css("display", "block");
+    $(".expanding-image-container").css("display", "block");
 }
 
 $(document).ready(toggleBrand);

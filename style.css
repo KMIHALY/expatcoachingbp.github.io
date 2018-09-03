@@ -173,6 +173,9 @@ h1 {
     padding: 15px;
     margin: auto;
     display: none;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
 /* Expanding image text */
@@ -204,7 +207,7 @@ h1 {
 }
 
 
-/* 
+ 
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
@@ -213,7 +216,7 @@ h1 {
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
-} */
+} 
 
 /* download button */
 .glyph-icon {
