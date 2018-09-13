@@ -10,10 +10,8 @@ function openImg(imgs) {
     $(".expanding-image-container").css("display", "block");
 }
 
-$(document).ready(toggleBrand);
-$(window).resize(toggleBrand);
-
 function toggleBrand() {
+    console.log("works");
     if ($(window).width() < 460) {
         $("#brand").hide();
     } else {
@@ -21,9 +19,10 @@ function toggleBrand() {
     }
 };
 
+$(document).ready(toggleBrand);
+$(window).resize(toggleBrand);
+
 // creating waypoints
-
-
 
 const waypointIds = ['#home', '#about', '#coaches', '#services', '#survivalKits', '#events', '#contact'];
 
@@ -37,7 +36,6 @@ const listItemFinder = (waypointId) => {
 let makeListItemHighlighted = (currentValue) => {
     waypointIds.map(
         (currentValue) => {
-            // $(listItemFinder(currentValue)).css('color', '#f7e4bc');
             $(listItemFinder(currentValue)).css('color', '#d7c8a8');
         });
     $(listItemFinder(currentValue)).css('color', 'white');
