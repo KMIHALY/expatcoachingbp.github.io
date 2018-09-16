@@ -23,7 +23,7 @@ $(document).ready(toggleBrand);
 $(window).resize(toggleBrand);
 
 // creating waypoints
-
+// -css, osztály rakni rá és venni le róla.
 const waypointIds = ['#home', '#about', '#coaches', '#services', '#survivalKits', '#events', '#contact'];
 
 const listItemFinder = (waypointId) => {
@@ -36,17 +36,17 @@ const listItemFinder = (waypointId) => {
 let makeListItemHighlighted = (currentValue) => {
     waypointIds.map(
         (currentValue) => {
-            $(listItemFinder(currentValue)).css('color', '#d7c8a8');
-        });
-    $(listItemFinder(currentValue)).css('color', 'white');
+            $(listItemFinder(currentValue)).removeClass('white-highlighting').addClass('grey-highlighting');
+        }
+    );
+    $(listItemFinder(currentValue)).removeClass('grey-highlighting').addClass('white-highlighting');
 }
 
 $(String(waypointIds[0])).waypoint(
     () => { 
         makeListItemHighlighted(listItemFinder(waypointIds[0])); 
-        document.getElementById("li-home").style.color = "white";
     },
-{ offset: -1 }  
+{ offset: -5 }  
 );
 
 waypointIds.map(
