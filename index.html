@@ -17,78 +17,38 @@
 </head>
 
 <body>
-        <li class="dropdown language-selector no-bullet" id="language-button-li">
-                <a href="#" id="language-button" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
-                    <img src="pictures/flags/PNG/256/53139 - ck gw.png" class="language-image" alt="flag of the United Kingdom (Union Jack) (default)"
-                    />
-                </a>
-                <ul class="dropdown-menu" id="bg-languages">
-                    <li>
-                        <a href="#">
-                            <img src="pictures/flags/PNG/128/53150 - de so.png" class="language-image" alt="flag of Germany" />
-                            <span>Deutsch</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">
-                            <img src="pictures/flags/PNG/256/53139 - ck gw.png" class="language-image" alt="flag of the United Kingdom (Union Jack)"
-                            />
-                            <span>English</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="pictures/flags/PNG/128/french.png" class="language-image" alt="flag of France" />
-                            <span>Française</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="pictures/flags/PNG/256/53190 - hu mr.png" class="language-image" alt="flag of Hungary" />
-                            <span>Magyar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="pictures/flags/PNG/russian_language_hooligans.png" class="language-image" alt="flag of Russia" />
-                            <span>Pусский</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            
     <nav class="navbar navbar-expand-xl bg-navbar" id="navbar">
-        <a class="navbar-brand" id="brand" href="#"><h1>EXPAT COACHING BUDAPEST</h1></a>
+        <a class="navbar-brand" id="brand" href="#" tabindex="1"><h1>EXPAT COACHING BUDAPEST</h1></a>
 
-        <button class="navbar-toggler" id="navbarMenuButton" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        <button class="navbar-toggler" id="navbarMenuButton" type="button" tabindex="2" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <li class="nav-item active" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="3">
                     <a class="nav-link hideBefore" href="#home" id="li-home">
                         <img src="pictures/glyphicons/glyphicons-21-home_light.png" class="glyph-icon3" alt="home"> Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="4">
                     <a class="nav-link" href="#about" id="li-about">About</a>
                 </li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="5">
                     <a class="nav-link" href="#coaches" id="li-coaches">Coaches</a>
                 </li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="6">
                     <a class="nav-link" href="#services" id="li-services">Services</a>
                 </li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="7">
                     <a class="nav-link" href="#survivalKits" id="li-survivalKits">Survival Kits</a>
                 </li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="8">
                     <a class="nav-link" href="#events" id="li-events">Events</a>
                 </li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="9">
                     <a class="nav-link" href="#contact" id="li-contact">Contacts</a>
                 </li>
 
@@ -104,12 +64,51 @@
                 </li> -->
             </ul>
         </div>
-
-   
-
     </nav>
+
+    <li class="dropdown language-selector no-bullet" id="language-button-li">
+        <a href="#" id="language-button" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true" tabindex="0">
+            <img src="pictures/flags/PNG/256/53139 - ck gw.png" class="language-image" alt="flag of the United Kingdom (Union Jack) (default)"
+            />
+        </a>
+        <ul class="dropdown-menu" id="bg-languages">
+            <li>
+                <a href="#">
+                    <img src="pictures/flags/PNG/128/53150 - de so.png" class="language-image" alt="flag of Germany" />
+                    <span>Deutsch</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <img src="pictures/flags/PNG/256/53139 - ck gw.png" class="language-image" alt="flag of the United Kingdom (Union Jack)"
+                    />
+                    <span>English</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="pictures/flags/PNG/128/french.png" class="language-image" alt="flag of France" />
+                    <span>Française</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="pictures/flags/PNG/256/53190 - hu mr.png" class="language-image" alt="flag of Hungary" />
+                    <span>Magyar</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="pictures/flags/PNG/russian_language_hooligans.png" class="language-image" alt="flag of Russia" />
+                    <span>Pусский</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
     <div class="navbar-sized-div" id="home">
     </div>
+
     <!-- Carousel image changer -->
     <div class="cover-container">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3500">
@@ -302,7 +301,8 @@
         <!-- The expanding image container -->
         <div class="expanding-image-container col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
             <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" onkeypress="this.parentElement.style.display='none'" tabindex='12' class="close-button">&times;</span>
+            <span onclick="this.parentElement.style.display='none'" onkeypress="this.parentElement.style.display='none'" tabindex='12'
+                class="close-button">&times;</span>
 
             <!-- Expanded image -->
             <img id="expandedImg" src="pictures/survival_kit/budapest_compass.png" alt="expanded picture">

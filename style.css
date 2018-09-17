@@ -36,10 +36,18 @@ img {
     z-index: 16;
     width: 100%;
     margin: 0px;
-    /* display: flex;
-    justify-content: space-between; */
+    /* display: flex; */
     text-align: justify;
+    justify-content: space-between;
     vertical-align: middle;
+}
+
+#navbar *:focus, #language-button-li *:focus {
+    /* outline: 1px solid whitesmoke !important; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
 }
 
 .bg-navbar {
@@ -71,7 +79,6 @@ img {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc');
 }
 
-
 /* Content starts here */
 
 .carousel-caption {
@@ -88,7 +95,6 @@ img {
 .carousel-indicators li.active {
     background-color: #790808;
 }
-
 
 .cover-container {
     padding: 0px;
