@@ -11,6 +11,7 @@ body, html {
 h1 {
     font-size: 20px;
     margin-bottom: 0px;
+    color:orange;
 }
 
 .nav-link::before {
@@ -40,8 +41,7 @@ img {
     background-color: #790808;
 }
 
-/* Two style for waypoint mechanism to work in JQuery */
-
+/* Two styles for waypoint mechanism to work in JQuery */
 .white-highlighting {
     color: orange !important;
 }
@@ -185,7 +185,7 @@ h2 {
   }
 
   .carousel-inner > .carousel-item {
-      -webkit-transition-duration: 1.5s;
+    -webkit-transition-duration: 1.5s;
     -moz-transition-duration: 1.5s;
     -o-transition-duration: 1.5s;
     transition-duration: 1.5s;
@@ -242,8 +242,6 @@ h2 {
 .card {
     margin-top: 10px;
 }
-
-
  
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
@@ -286,7 +284,6 @@ h2 {
 
 /* language selection */
 
-/* #language-button-li a > img { */
 .language-image {
     width: 38px;
     height: 38px;
@@ -311,25 +308,19 @@ a#language-button:hover {
     text-decoration: none;
 }
 
-.btn-primary:link {
-    color: #000;
-    background-color: #e25503;
-}
-
-.btn-primary:hover {
-    background-color: #ff9102;
-    text-decoration: none;
-}
-
 #coaches a:link {
-    color: rgb(37, 37, 37);
-    font-weight: bold;
-    background-color: #e25503;
+    /* color: rgb(37, 37, 37);
+    background-color: #e25503; */
+    color:#f7e4bc;
+    background-color: #790808 ;
     border-style: none;
+    font-weight: bold;
 }
 
 #coaches a:hover {
-    background-color: #ff9102;
+    color: #790808;
+    background-color:rgb(230, 122, 0) ;
+    /* background-color: #ff9102; */
     text-decoration: none;
     border-style: none;
 }
