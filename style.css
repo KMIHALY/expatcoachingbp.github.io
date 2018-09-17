@@ -14,6 +14,11 @@ h1 {
     color:orange;
 }
 
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .nav-link::before {
     content: "  | ";
 }
@@ -53,12 +58,13 @@ img {
 #bg-languages {
     background-color: #790808;
     position: absolute;
-    left: calc(100% - 160px);
+    /* left: calc(100% - 160px); */
     padding: 10px;
     border-left: 2px solid #f7e4bc;
     border-right: 2px solid #f7e4bc;
     border-bottom: 2px solid #f7e4bc; 
     border-radius: 30px;
+    transform: translate3d(-20px, 35px, 0px) !important;
 }
 
 .navbar .navbar-toggler-icon {
@@ -369,23 +375,23 @@ src:  url(fonts/Ubuntu-Medium.ttf);
 }
 
 /* unvisited link */
-.navbar a:link, .footer a:link {
+.navbar a:link, .footer a:link, #language-button-li a {
     color: #f7e4bc;
     text-decoration: none;
 }
 
 /* visited link */
-.navbar a:visited, .footer a:visited {
+.navbar a:visited, .footer a:visited, #language-button-li a {
     color: #f7e4bc;
 }
 
 /* mouse over link */ 
-.navbar a:hover, .footer a:hover {
+.navbar a:hover, .footer a:hover, #language-button-li a {
     color: white;
 }
 
 /* selected link */
-.navbar a:active, .footer a:active {
+.navbar a:active, .footer a:active, #language-button-li a {
     color: white;
 }
 
