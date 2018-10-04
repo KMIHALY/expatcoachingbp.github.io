@@ -121,10 +121,10 @@ border-width: 3px;
     margin-top: 20px;
 }
 
-form {
+/* form {
     display: block;
     margin: auto;
-}
+} */
 
 .parallax {
     /* The image used */
@@ -202,6 +202,13 @@ h2 {
     -o-transition-duration: 1.5s;
     transition-duration: 1.5s;
 }
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+}
+
 
 /* image gallery css at survival kits*/
 
