@@ -1,0 +1,345 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body, html {
+  height: 100%;
+  font-size: 100%; }
+
+.navbar-sized-div {
+  width: 100%;
+  height: 56px; }
+
+h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0rem;
+  color: #ffa500; }
+
+h4 {
+  text-align: center;
+  color: #e67a00; }
+
+p {
+  text-align: justify;
+  text-justify: inter-word; }
+
+.nav-link::before {
+  content: "  | "; }
+
+.hideBefore::before {
+  content: ""; }
+
+img {
+  height: 100%; }
+
+#navbar {
+  position: fixed;
+  z-index: 16;
+  width: 100%;
+  margin: 0rem;
+  /* display: flex; */
+  text-align: justify;
+  justify-content: space-between;
+  vertical-align: middle; }
+
+#navbar *:focus, #language-button-li *:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none; }
+
+.bg-navbar {
+  background-color: #790808; }
+
+/* Two styles for waypoint mechanism to work in JQuery */
+.orange-highlighting {
+  color: #ffa500 !important; }
+
+.grey-highlighting {
+  color: #d7c8a8; }
+
+#bg-languages {
+  background-color: #790808;
+  position: absolute;
+  /* left: calc(100% - 160px); */
+  padding: 0.625rem;
+  border-left: 0.125rem solid #f7e4bc;
+  border-right: 0.125rem solid #f7e4bc;
+  border-bottom: 0.125rem solid #f7e4bc;
+  border-radius: 1.875rem;
+  transform: translate3d(-1.25rem, 2.1875rem, 0rem) !important; }
+
+.navbar .navbar-toggler-icon {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc"); }
+
+/* Content starts here */
+.carousel-caption {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 2rem;
+  font-style: italic; }
+
+.carousel-indicators li {
+  background-color: #000; }
+
+.carousel-indicators li.active {
+  background-color: #790808; }
+
+.cover-container {
+  padding: 0px;
+  margin: 0px;
+  top: 3.5rem;
+  height: calc(100% - 3.5rem);
+  width: 100%; }
+
+.coach-photo {
+  padding: 0.625rem;
+  border-radius: 0.3125rem; }
+
+.coach-name {
+  font-size: 1.375rem; }
+
+.container > hr {
+  border-width: 0.1875rem; }
+
+.picture-topspace {
+  margin-top: 1.25rem; }
+
+/* form {
+    display: block;
+    margin: auto;
+} */
+.parallax-background {
+  background-image: url("../pictures/1200px-Lanchid_Budapest.jpg");
+  -webkit-filter: grayscale(80%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.text-container {
+  height: fit-content;
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 3.125rem;
+  padding-top: 3.875rem; }
+
+.item {
+  margin: 0rem; }
+
+h2 {
+  text-align: center; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+    max-height: 100%; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    max-height: 100%; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 100%;
+    max-height: 100%; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+    max-height: 100%; } }
+
+.make-this-cover, #carouselExampleIndicators, .container, .carousel-inner, .carousel-item, img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%; }
+
+.carousel-inner > .carousel-item {
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  transition-duration: 1.5s; }
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px; }
+
+.survivalKits > img {
+  opacity: 0.8;
+  cursor: pointer; }
+
+.survivalKits img:hover {
+  opacity: 1; }
+
+/* The expanding image container starts here !!! positioning is necessary to have the close button and the text positioned */
+.expanding-image-container {
+  position: relative;
+  background-color: #fff;
+  border: solid #d7c8a8 0.0625rem;
+  padding: .9375rem;
+  margin: auto;
+  display: none;
+  animation-name: zoom;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1; }
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: .9375rem;
+  left: .9375rem;
+  color: #000;
+  font-size: .9375rem;
+  font-weight: bold; }
+
+/* Closable button inside the image */
+.close-button {
+  position: absolute;
+  top: .625rem;
+  right: .9375rem;
+  color: #000;
+  font-size: 3.125rem;
+  font-weight: bold;
+  cursor: pointer; }
+
+.contact-paragraph {
+  text-align: center; }
+
+.card {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  background-color: #fff;
+  display: block; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+/* download button */
+.glyph-icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: inline-block; }
+
+.glyph-container {
+  display: flex;
+  justify-content: center; }
+
+/* phone icon */
+.glyph-icon2 {
+  width: 24px;
+  height: 16px;
+  margin-right: 0.3125rem;
+  display: inline-block; }
+
+/* house/home icon */
+.glyph-icon3 {
+  width: 18px;
+  height: 20px;
+  margin: auto;
+  position: relative;
+  display: inline-block; }
+
+/* language selection */
+.language-image {
+  width: 38px;
+  height: 38px; }
+
+.no-bullet {
+  list-style-type: none;
+  margin: 0rem;
+  margin-left: .9375rem;
+  padding: 0rem;
+  position: fixed;
+  z-index: 17;
+  left: calc(100% - 10rem);
+  top: .625rem; }
+
+.dropdown-toggle::after {
+  vertical-align: 0rem; }
+
+a#language-button:hover {
+  text-decoration: none; }
+
+#coaches a:link, a:visited, a:active,
+#forOrganizations a:link, a:visited, a:active {
+  color: #f7e4bc;
+  background-color: #790808;
+  border-style: none;
+  font-weight: bold; }
+
+#coaches a:hover,
+#forOrganizations a:hover {
+  color: #790808;
+  background-color: #e67a00;
+  text-decoration: none;
+  border-style: none; }
+
+.quote {
+  padding: 1.875rem;
+  color: #e67a00;
+  font-weight: bold;
+  font-style: italic; }
+
+#navbar {
+  font-family: fontUbuntu; }
+
+@font-face {
+  font-family: fontUbuntu;
+  src: url(../fonts/Ubuntu-Medium.ttf); }
+
+.footer {
+  color: #f7e4bc;
+  text-align: center;
+  padding: 0.625rem; }
+
+/* unvisited link */
+.navbar a:link, .footer a:link, #language-button-li a {
+  color: #f7e4bc;
+  text-decoration: none; }
+
+/* visited link */
+.navbar a:visited, .footer a:visited, #language-button-li a {
+  color: #f7e4bc; }
+
+/* mouse over link */
+.navbar a:hover, .footer a:hover, #language-button-li a {
+  color: #fff; }
+
+/* selected link */
+.navbar a:active, .footer a:active, #language-button-li a {
+  color: #fff; }
+
+/* black colored links */
+div p a:link {
+  color: #000; }
+
+/* visited link */
+div p a:visited {
+  color: #000;
+  text-decoration: none; }
+
+/* mouse over link */
+div p a:hover {
+  color: #505558;
+  text-decoration: none; }
+
+/* selected link */
+div p a:active {
+  color: #505558;
+  text-decoration: none; }

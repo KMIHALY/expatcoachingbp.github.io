@@ -11,7 +11,6 @@ function openImg(imgs) {
 }
 
 function toggleBrand() {
-    console.log("works");
     if ($(window).width() < 460) {
         $("#brand").hide();
     } else {
@@ -23,8 +22,8 @@ $(document).ready(toggleBrand);
 $(window).resize(toggleBrand);
 
 // creating waypoints
-// -css, osztály rakni rá és venni le róla.
-const waypointIds = ['#home', '#about', '#coaches', '#services', '#survivalKits', '#events', '#contact'];
+// -css, osztályt rakni rá és venni le róla.
+const waypointIds = ['#home', '#about', '#coaches', '#services', '#survivalKits', '#forOrganizations', '#events', '#contact'];
 
 const listItemFinder = (waypointId) => {
     let waypointIdArray = waypointId.split("");
@@ -36,10 +35,10 @@ const listItemFinder = (waypointId) => {
 let makeListItemHighlighted = (currentValue) => {
     waypointIds.map(
         (currentValue) => {
-            $(listItemFinder(currentValue)).removeClass('white-highlighting').addClass('grey-highlighting');
+            $(listItemFinder(currentValue)).removeClass('orange-highlighting').addClass('grey-highlighting');
         }
     );
-    $(listItemFinder(currentValue)).removeClass('grey-highlighting').addClass('white-highlighting');
+    $(listItemFinder(currentValue)).removeClass('grey-highlighting').addClass('orange-highlighting');
 }
 
 $(String(waypointIds[0])).waypoint(

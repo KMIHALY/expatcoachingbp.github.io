@@ -9,11 +9,35 @@
     <meta name="description" content="Looking for counselling and coaching sessions in Hungary? Our professional and dynamic team provides them to individuals or groups in several languages.">
     <meta name="keywords" content="Budapest, expat, life-coaching, coaching, couple, counselling, stress, management, psychology, therapy, english,  mental, hygiene">
     <meta name="author" content="Mihály Kálóczy">
+    <meta property="og:title" content="EXPAT COACHING BUDAPEST" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.expatcoachingbud.com" />
+    <meta property="og:description" content="Looking for counselling and coaching sessions in Hungary? Our professional and dynamic team provides them to individuals or groups in several languages." />
+    <meta property="og:image" content="http://expatcoachingbud.com/cover-images/carousel_a.jpg">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="icon" href="pictures/favicon3.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#ffa500",
+                        "text": "#790808 "
+                    }
+                },
+                "theme": "classic",
+                "position": "bottom",
+                "static": false
+            })
+        });
+    </script>
 </head>
 
 <body>
@@ -49,27 +73,20 @@
                     <a class="nav-link" href="#survivalKits" id="li-survivalKits">Survival Kits</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="8">
-                    <a class="nav-link" href="#events" id="li-events">Events</a>
+                    <a class="nav-link" href="#forOrganizations" id="li-forOrganizations">For Organizations</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="9">
+                    <a class="nav-link" href="#events" id="li-events">Events</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target="#navbarNavDropdown" tabindex="10">
                     <a class="nav-link" href="#contact" id="li-contact">Contacts</a>
                 </li>
 
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li> -->
             </ul>
         </div>
     </nav>
 
-    <li class="dropdown language-selector no-bullet" id="language-button-li">
+    <!-- <li class="dropdown language-selector no-bullet" id="language-button-li">
         <a href="#" id="language-button" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true"
             tabindex="0">
             <img src="pictures/flags/PNG/256/53139 - ck gw.png" class="language-image" alt="flag of the United Kingdom (Union Jack) (default)" />
@@ -106,7 +123,7 @@
                 </a>
             </li>
         </ul>
-    </li>
+    </li> -->
 
     <div class="navbar-sized-div" id="home">
     </div>
@@ -157,9 +174,9 @@
         </div>
     </div>
 
-    <!-- <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz"></div> -->
+    <!-- <div class="parallax-background" title="Lánchid Budapest. Photo © François Guerraz"></div> -->
     <!-- MENU contents start here -->
-    <div id="about" class="div-style">
+    <div id="about" class="text-container">
         <h2>About</h2>
         <p> As a team of dynamic and professional psychologists and therapists we provide counselling and coaching
             sessions
@@ -172,10 +189,10 @@
             us Your Story.</p>
     </div>
 
-    <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz">
+    <div class="parallax-background" title="Lánchid Budapest. Photo © François Guerraz">
     </div>
 
-    <div id="coaches" class="div-style">
+    <div id="coaches" class="text-container">
         <h2>Coaches</h2>
         <div class="container">
             <div class="row">
@@ -245,25 +262,25 @@
                         issues, difficulties with adaptation, lack of self confidence… My counsellings are addressed to
                         parents
                         and couples, and I also provide individual consultations for adults, adolescents and children.</p>
-                    <a href="#contact" class="btn btn-primary">CONTACT</a>
+                    <a href="#contact" class="btn">CONTACT</a>
                 </div>
 
             </div>
             <hr>
-            <div class="row top-space">
+            <div class="row picture-topspace">
                 <img src="pictures/coaches/mcs.png" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coach-photo"
                     alt="photo of Csongor Matyi">
                 <div class="col-xs-12 col-sm-10 col-md-6 col-lg-8 col-xl-9" lang="en">
                     <span class="coach-name">
-                        <strong> Csongor Matyi</strong>
+                        <strong>Csongor Matyi</strong>
                     </span>
                     <li>Psychologist </li>
                     <li>Researcher</li>
                     <li>Educator</li>
-                    <br><i> „No matter how long the storm lasts, the sun always shines behind the clouds.”</i> – Khalil
+                    <br><i>„No matter how long the storm lasts, the sun always shines behind the clouds.”</i> – Khalil
                     Gibran
 
-                    <p><br> As a counsellor my task is to help clients identify their strengths, move beyond
+                    <p><br>As a counsellor my task is to help clients identify their strengths, move beyond
                         challenging
                         situations, and make them ready to face difficult or threatening events. Sometimes an
                         encouraging
@@ -282,12 +299,12 @@
                         help
                         them live a more satisfying life.
                         <br> I look forward to hearing from you.</p>
-                    <a href="#contact" class="btn btn-primary">CONTACT</a>
+                    <a href="#contact" class="btn">CONTACT</a>
                 </div>
             </div>
             <hr>
-            <div class="row top-space">
-                <img src="pictures/coaches/mg.jpg" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coach-photo"
+            <div class="row picture-topspace">
+                <img src="pictures/coaches/mg2.jpg" class="col-xs-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 coach-photo"
                     alt="photo of Masa Gorog">
                 <div class="col-xs-12 col-sm-10 col-md-6 col-lg-8 col-xl-9" lang="ru">
                     <span class="coach-name">
@@ -326,17 +343,17 @@
                     <p>Если в вашей жизни возникают такие же вопосы, не чувствуете себя хорошо в своей жизненной
                         ситуации,
                         возьмите дело в свои руки! С радостью помогу вам!</p>
-                    <a href="#contact" class="btn btn-primary">CONTACT</a>
+                    <a href="#contact" class="btn">CONTACT</a>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz">
+    <div class="parallax-background" title="Lánchid Budapest. Photo © François Guerraz">
     </div>
 
-    <div id="services" class="div-style">
+    <div id="services" class="text-container">
         <h2>Services</h2>
         <p>You can find your own answers in the course of our counselling sessions to many types of questions. <br>
             Our clients typically seek our help with questions like:
@@ -354,7 +371,7 @@
                 <li>Our kids find it difficult to blend into their new schools. Is there any way we can support them
                     somehow?</li>
             </ul>
-            <h2>Good to know</h2>
+            <h4>Good to know</h4>
             <p>
                 <b>How to get an appointment?</b><br>
                 To reserve a session, please contact the counsellor of your choice via e-mail or mobile phone.
@@ -368,24 +385,24 @@
                 A private session typically lasts 50 minutes, please try to arrive 5 minutes ahead.
             </p>
             <p>
-                    <b>How much will it cost?</b><br>
-                    Please consider that our counselling fees may vary upon counsellor and range between 10.000 to
-                    15.000 HUF for a private session of 50 minutes, and between 20.000 to 30.000 HUF for a couple therapy
-                    session of 90 minutes.
-                </p>
+                <b>How much will it cost?</b><br>
+                Please consider that our counselling fees may vary upon counsellor and range between 10.000 to
+                15.000 HUF for a private session of 50 minutes, and between 20.000 to 30.000 HUF for a couple therapy
+                session of 90 minutes.
+            </p>
             <p>
                 <b>Where would I need to go?</b><br>
                 We are located in the 2nd district: 1024 Budapest, Szász Károly street 6.
             </p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10779.050126341785!2d19.0331671!3d47.5140157!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc1d06467361%3A0xf22e528e716ad009!2sBudapest%2C+Sz%C3%A1sz+K%C3%A1roly+u.+6%2C+1027!5e0!3m2!1sen!2shu!4v1538654346761"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                frameborder="3px" style="border:1px solid #d7c8a8; padding: 1rem; background-color: white" allowfullscreen></iframe>
         </p>
     </div>
 
-    <div class="parallax" title="Lánchid Budapest. Photo © François Guerraz">
+    <div class="parallax-background" title="Lánchid Budapest. Photo © François Guerraz">
     </div>
 
-    <div id="survivalKits" class="div-style">
+    <div id="survivalKits" class="text-container">
         <h2>Survival Kits</h2>
         <p>We are trying to help You with these reminder pics that you can download, so it will be always be on your
             phone.</p>
@@ -396,7 +413,7 @@
         <div class="expanding-image-container col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
             <!-- Close the image -->
             <span onclick="this.parentElement.style.display='none'" onkeypress="this.parentElement.style.display='none'"
-                tabindex='12' class="close-button">&times;</span>
+                tabindex='11' class="close-button">&times;</span>
 
             <!-- Expanded image -->
             <img id="expandedImg" src="pictures/survival_kit/budapest_compass.png" alt="expanded picture">
@@ -410,7 +427,7 @@
                 <div class="card card-body survivalKits col-xs-12 col-sm-8 col-md-6 col-lg-4">
                     <h5 class="card-title">Budapest Compass</h5>
                     <img src="pictures/survival_kit/budapest_compass.png" class="img-thumbnail" alt="A compass to Budapest"
-                        onclick="openImg(this);" onkeypress="openImg(this);" tabindex="10">
+                        onclick="openImg(this);" onkeypress="openImg(this);" tabindex="12">
                     <div class="card-body">
                         <p class="card-text">It is a damn stupid thing that the directions of Budapest metro lines are
                             not
@@ -426,13 +443,13 @@
                                 <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyph-icon" alt="download the Budapest compass">
                             </a>
                         </div>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <!-- <a href="#" class="btn">Go somewhere</a> -->
                     </div>
                 </div>
                 <div class="card card-body survivalKits col-xs-12 col-sm-8 col-md-6 col-lg-4">
                     <h5 class="card-title">Guide to the lake Balaton</h5>
                     <img src="pictures/survival_kit/balaton101.png" class="img-thumbnail" alt="Guide to the lake Balaton"
-                        onclick="openImg(this);" onkeypress="openImg(this);" tabindex='11'>
+                        onclick="openImg(this);" onkeypress="openImg(this);" tabindex='13'>
                     <div class="card-body">
                         <p class="card-text">BALATON 101 - A few bits of info about the 'Hungarian Sea' that everyone
                             here
@@ -442,17 +459,63 @@
                                 <img src="pictures/glyphicons/glyphicons-201-download.png" class="glyph-icon" alt="download the Guide to Balaton">
                             </a>
                         </div>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <!-- <a href="#" class="btn">Go somewhere</a> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="parallax">
+    <div class="parallax-background" title="Lánchid Budapest. Photo © François Guerraz">
     </div>
 
-    <div id="events" class="div-style">
+    <div id="forOrganizations" class="text-container">
+        <h2>For Organizations</h2>
+        <p><b>We, at Expat Coaching Budapest believe that people who come to
+                Hungary from all around the world deserve professional help with
+                their adjustment process on their own language.</b><br></p>
+        <p class="quote">Every one of us strives to keep up a good balance in several aspects of our
+            everyday lives. Since obscurities in the social environment influence our
+            mood & behaviour more than conscious thought patterns, the balance of
+            emotional well-being can be at risk when new to a country.</p>
+        <p>We are professional consultants who provide mental-health related services
+            whether life-coaching, counselling or psychotherapy.</p>
+        <p>As a ‘side dish’ we have prepared this material to help the adjustment process of
+            expats, immigrants, digital nomads etc. to this unique cultural and social setting,
+            that you call <i>Hungary</i>, and we call <i>Magyarország.</i></p>
+        <h2>Crash-course on Hungarian mentality</h2>
+
+        <h4>What is it?</h4>
+        <p>Interesting and useful content that can be delivered in various formats and
+            depths: from a 50 mins lecture thru a 3 hrs long workshop to a 2-day-long
+            training programme – it’s our customer’s choice. Yet, no matter what the format
+            is, it’s always delivered in a funny and relaxed way with practical hints and tips
+            for immediate use.
+            <h4>Why is it good?</h4>
+            <ul>
+                <li><b>Boosts confidence</b></li>
+                <li><b>Reduces anxiety</b></li>
+                <li><b>Broadens your understanding</b> of the locals’ behaviour, emotions and motives</li>
+                <li>Strengthens your ability to <b>control social situations</b> formerly foreign or alien to you</li>
+                <li>Provides opportunity for <b>like-minded people</b> to meet</li>
+            </ul>
+            <h4>Who can apply and how?</h4>
+            <p>Whether you are …
+                <ul>
+                    <li>with an organization that aims at helping such communities</li>
+                    <li>a representative of a company that wishes to help expatriated employees</li>
+                    <li>or an individual seeking professional help</li>
+                </ul>
+                ask for an appointment for a free-of-charge consultation to discuss your request.</p>
+            <a href="#contact" class="btn">CONTACT</a>
+        </p>
+
+    </div>
+
+    <div class="parallax-background" title="Lánchid Budapest. Photo © François Guerraz">
+    </div>
+
+    <div id="events" class="text-container">
         <h2>Events</h2>
         <p>We also organize lectures and workshops related to various psychological topics such as stress management
             and
@@ -463,27 +526,59 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
-                        <img class="card-img-top" src="pictures/events/hun_menta_ws_event_1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="pictures/events/hun_menta_ws_event_1.jpg" alt="The two entertainers on the stage">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Hungarian Mentality seminar 2017</h5>
+                            <p class="card-text">Explaining Hungarian characteristics</p>
                             <!-- If you like to link to an other website (as an advertisement) OR have sg written in details 
                                 someswhere about this topic, use the button below -->
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <!-- <a href="#" class="btn">Go somewhere</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
-                        <img class="card-img-top" src="pictures/events/hun_menta_ws_event_2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="pictures/events/hun_menta_ws_event_2.jpg" alt="Crowd">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <h5 class="card-title">Hungarian Mentality seminar 2017</h5>
+                            <p class="card-text">Some 50 people at Lámpás Pub</p>
+                            <!-- <a href="#" class="btn">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="pictures/events/2017.11.18 - AIESEC workshop.jpg" alt="Corvinus University Students">
+                        <div class="card-body">
+                            <h5 class="card-title">HunMenta seminar 2017</h5>
+                            <p class="card-text">Holding HunMenta seminar for AIESEC students at Corvinus</p>
+                            <!-- <a href="#" class="btn">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="pictures/events/20190116_180515.jpg" alt="The two entertainers on the stage">
+                        <div class="card-body">
+                            <h5 class="card-title">Key to Hungarian hearts</h5>
+                            <p class="card-text">Attendees arriving to lecture organized by Blue Elephant</p>
+                            <!-- If you like to link to an other website (as an advertisement) OR have sg written in details 
+                                someswhere about this topic, use the button below -->
+                            <!-- <a href="#" class="btn">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="pictures/events/20190116_180532.jpg" alt="The two entertainers on the stage">
+                        <div class="card-body">
+                            <h5 class="card-title">Key to Hungarian hearts</h5>
+                            <p class="card-text">Attendees arriving to lecture organized by Blue Elephant</p>
+                            <!-- If you like to link to an other website (as an advertisement) OR have sg written in details 
+                                someswhere about this topic, use the button below -->
+                            <!-- <a href="#" class="btn">Go somewhere</a> -->
                         </div>
                     </div>
                 </div>
@@ -491,14 +586,14 @@
         </div>
     </div>
 
-    <div class="parallax" id="contact" title="Lánchid Budapest. Photo © François Guerraz">
+    <div class="parallax-background" id="contact" title="Lánchid Budapest. Photo © François Guerraz">
     </div>
 
-    <div class="div-style">
+    <div class="text-container">
         <h2>Contact</h2>
         <div class="row">
-            <div class="col-md-4 form-line">
-                <p class="contact-paragraph">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <p class="card contact-paragraph">
                     <br>
                     <strong>Dorottya Tiboldi (HU, EN, FR)</strong>
                     <br>
@@ -512,8 +607,8 @@
                 </p>
             </div>
 
-            <div class="col-md-4">
-                <p class="contact-paragraph">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <p class="card contact-paragraph">
                     <br>
                     <strong>Csongor Matyi (HU, EN)</strong>
                     <br>
@@ -527,10 +622,10 @@
                 </p>
             </div>
 
-            <div class="col-md-4 form-line">
-                <p class="contact-paragraph">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <p class="card contact-paragraph">
                     <br>
-                    <strong>Маша Герег (Görög Mása) (RU)</strong>
+                    <strong>Маша Герег (Görög Mása) (HU, RU)</strong>
                     <br>
                     <img src="pictures/glyphicons/glyphicons-443-earphone.png" class="glyph-icon" alt="phone">
                     003670/ 31-41-936
@@ -541,61 +636,7 @@
                     </a>
                 </p>
             </div>
-
         </div>
-        <!-- contact form -->
-        <!--
-        <div class="container noTopMargin">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3" id="form_container">
-                    <form role="form" method="post" id="reused_form">
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <label for="message"> Message:</label>
-                                <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7" required></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 form-group">
-                                <label for="name"> Your Name:</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="col-sm-6 form-group">
-                                <label for="email"> Email:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <button type="submit" class="btn btn-md" id="contactButton">SEND</button>
-                            </div>
-                        </div>
-                    </form>
-                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
-                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="container">
-            <form action="action_page.php" method="POST">
-          
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Enter First Name Here" autocomplete="cc-given-name">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Enter Last Name Here" autocomplete="cc-family-name">
-          
-              <label for="country">Spoken Languages</label>
-              <input type="text" id="country" name="languages" placeholder="Enter the Languages Spoken" autocomplete="language">
-          
-              <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Write Your Message Here" style="height:200px" autocomplete="off"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
-          </div> -->
     </div>
 
     <footer class="bg-navbar footer">
@@ -618,6 +659,15 @@
     <script src="javascript.js"></script>
 
     <!-- <script src="form.js"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126959827-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126959827-1');
+    </script>
 </body>
 
 </html>
