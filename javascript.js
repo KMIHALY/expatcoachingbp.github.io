@@ -11,7 +11,7 @@ function openImg(imgs) {
 }
 
 function toggleBrand() {
-    if ($(window).width() < 460) {
+    if ($(window).width() < 440) {
         $("#brand").hide();
     } else {
         $("#brand").show();

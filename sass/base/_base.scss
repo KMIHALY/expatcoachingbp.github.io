@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0rem;
+    color: $color-orange;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: $color-darker-orange;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+img {
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: .0625rem solid $color-lightgrey; 
+    padding: 1rem; 
+    background-color: $color-white;
+}

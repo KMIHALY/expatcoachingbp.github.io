@@ -1,43 +1,45 @@
-$color-orange: #ffa500;
-$color-darker-orange: #e67a00;
-$color-brown: #790808;
-$color-lightgrey: #d7c8a8;
-$color-grey: #505558;
-$color-lightbrown: #f7e4bc;
-$color-whitesmoke: #f5f5f5;
-$color-white: #fff;
-$color-black: #000;
+@import "abstracts/variables";
+@import "base/base";
+@import "base/animations";
+@import "components/carousel";
 
-
-* {
-    margin: 0px;
-    padding: 0px;
+@media (min-width: 1050px) {
+	.navbar-expand-xl {
+	  -ms-flex-flow: row nowrap;
+	  flex-flow: row nowrap;
+	  -ms-flex-pack: start;
+	  justify-content: flex-start;
+	}
+	.navbar-expand-xl .navbar-nav {
+	  -ms-flex-direction: row;
+	  flex-direction: row;
+	}
+	.navbar-expand-xl .navbar-nav .dropdown-menu {
+	  position: absolute;
+	}
+	.navbar-expand-xl .navbar-nav .nav-link {
+	  padding-right: 0.5rem;
+	  padding-left: 0;
+	}
+	.navbar-expand-xl > .container,
+	.navbar-expand-xl > .container-fluid {
+	  -ms-flex-wrap: nowrap;
+	  flex-wrap: nowrap;
+	}
+	.navbar-expand-xl .navbar-collapse {
+	  display: -ms-flexbox !important;
+	  display: flex !important;
+	  -ms-flex-preferred-size: auto;
+	  flex-basis: auto;
+	}
+	.navbar-expand-xl .navbar-toggler {
+	  display: none;
+	}
 }
 
-body, html {
-    height: 100%;
-    font-size: 100%;
-}
-
-.navbar-sized-div {
+.behind-navbar-placeholder {
     width: 100%;
-    height: 56px;
-}
-
-h1 {
-    font-size: 1.25rem;
-    margin-bottom: 0rem;
-    color: $color-orange;
-}
-
-h4 {
-    text-align: center;
-    color: $color-darker-orange;
-}
-
-p {
-    text-align: justify;
-    text-justify: inter-word;
+    height: 3.5rem;
 }
 
 .nav-link::before {
@@ -48,19 +50,18 @@ p {
     content:"";
 }
 
-img {
-    height: 100%;
-}
-
-#navbar {
+.navbar {
+    font-family: fontUbuntu;
     position: fixed;
     z-index: 16;
     width: 100%;
-    margin: 0rem;
-    /* display: flex; */
     text-align: justify;
-    justify-content: space-between;
     vertical-align: middle;
+    background-color: $color-brown;
+
+    &-toggler-icon {
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc');
+    }
 }
 
 #navbar *:focus, #language-button-li *:focus {
@@ -68,10 +69,6 @@ img {
     -moz-appearance: none;
     appearance: none;
     outline: none;
-}
-
-.bg-navbar {
-    background-color: $color-brown;
 }
 
 /* Two styles for waypoint mechanism to work in JQuery */
@@ -83,7 +80,7 @@ img {
     color: $color-lightgrey;
 }
 
-#bg-languages {
+.bg-languages {
     background-color: $color-brown;
     position: absolute;
     /* left: calc(100% - 160px); */
@@ -93,35 +90,6 @@ img {
     border-bottom: 0.125rem solid $color-lightbrown; 
     border-radius: 1.875rem;
     transform: translate3d(-1.25rem, 2.1875rem, 0rem) !important;
-}
-
-.navbar .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc');
-}
-
-/* Content starts here */
-
-.carousel-caption {
-    color: $color-black;
-    background-color: rgba($color-white, 0.3);
-    font-size: 2rem;
-    font-style: italic;
-}
-
-.carousel-indicators li {
-    background-color: $color-black;
-}
-
-.carousel-indicators li.active {
-    background-color: $color-brown;
-}
-
-.cover-container {
-    padding: 0px;
-    margin: 0px;
-    top: 3.5rem;
-    height: calc(100% - 3.5rem);
-    width: 100%;
 }
 
 .coach-photo {
@@ -140,11 +108,6 @@ img {
 .picture-topspace {
     margin-top: 1.25rem;
 }
-
-/* form {
-    display: block;
-    margin: auto;
-} */
 
 .parallax-background {
     background-image: url("../pictures/1200px-Lanchid_Budapest.jpg");
@@ -165,13 +128,6 @@ img {
     padding-top: 3.875rem;
 }
 
-.item {
-    margin: 0rem;
-}
-
-h2 {
-    text-align: center;
-}
 
 @media (min-width: 576px) {
     .container {
@@ -185,6 +141,7 @@ h2 {
         max-width: 100%; 
         max-height: 100%;
     }
+  
   }
   
   @media (min-width: 992px) {
@@ -200,26 +157,6 @@ h2 {
         max-height: 100%;        
     }
   }
-
-  .make-this-cover, #carouselExampleIndicators, .container, .carousel-inner, .carousel-item, img {
-      object-fit: cover;
-      object-position: 50% 50%;
-      width: 100%;
-      height: 100%;
-  }
-
-  .carousel-inner > .carousel-item {
-    -webkit-transition-duration: 1.5s;
-    -moz-transition-duration: 1.5s;
-    -o-transition-duration: 1.5s;
-    transition-duration: 1.5s;
-}
-
-iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-}
 
 .survivalKits > img {
     opacity: 0.8; 
@@ -243,6 +180,10 @@ iframe {
     animation-iteration-count: 1;
 }
 
+.expanded-image-size {
+	width: 100%;
+}
+
 /* Expanding image text */
 #imgtext {
     position: absolute;
@@ -256,8 +197,9 @@ iframe {
 /* Closable button inside the image */
 .close-button {
     position: absolute;
-    top: .625rem;
-    right: .9375rem;
+    top: 1.1rem;
+    right: 1.2rem;
+    opacity: 0.5;
     color: $color-black;
     font-size: 3.125rem;
     font-weight: bold;
@@ -267,6 +209,7 @@ iframe {
 .contact-paragraph {
     text-align: center;
 }
+
 .card {
     margin: 0.625rem;
     padding: 0.625rem;
@@ -274,16 +217,6 @@ iframe {
     display: block;
 }
  
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-} 
-
 /* download button */
 .glyph-icon {
     width: 25px;
@@ -363,10 +296,6 @@ a#language-button:hover {
     font-style: italic;
 }
 
-#navbar {
-font-family: fontUbuntu;
-}
-
 @font-face {
 font-family: fontUbuntu;
 src: url(../fonts/Ubuntu-Medium.ttf);
@@ -374,6 +303,7 @@ src: url(../fonts/Ubuntu-Medium.ttf);
 
 .footer {
     color: $color-lightbrown;
+    background-color: $color-brown;
     text-align: center;
     padding: 0.625rem;
 }

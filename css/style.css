@@ -6,14 +6,13 @@ body, html {
   height: 100%;
   font-size: 100%; }
 
-.navbar-sized-div {
-  width: 100%;
-  height: 56px; }
-
 h1 {
   font-size: 1.25rem;
   margin-bottom: 0rem;
   color: #ffa500; }
+
+h2 {
+  text-align: center; }
 
 h4 {
   text-align: center;
@@ -23,33 +22,107 @@ p {
   text-align: justify;
   text-justify: inter-word; }
 
+img {
+  height: 100%; }
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: 0.0625rem solid #d7c8a8;
+  padding: 1rem;
+  background-color: #fff; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+.carousel-container {
+  height: calc(100% - 3.5rem);
+  width: 100%; }
+  .carousel-container .carousel-indicators li {
+    background-color: #000; }
+  .carousel-container .carousel-indicators li.active {
+    background-color: #790808; }
+  .carousel-container .carousel-size {
+    height: 100%;
+    width: 100%; }
+  .carousel-container .carousel-img-size {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%; }
+  .carousel-container .carousel-caption {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 2rem;
+    font-style: italic; }
+  .carousel-container .carousel-item {
+    -webkit-transition-duration: 1.5s;
+    -moz-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    transition-duration: 1.5s; }
+
+@media (min-width: 1050px) {
+  .navbar-expand-xl {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .navbar-expand-xl .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .navbar-expand-xl .navbar-nav .dropdown-menu {
+    position: absolute; }
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0; }
+  .navbar-expand-xl > .container,
+  .navbar-expand-xl > .container-fluid {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+  .navbar-expand-xl .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto; }
+  .navbar-expand-xl .navbar-toggler {
+    display: none; } }
+
+.behind-navbar-placeholder {
+  width: 100%;
+  height: 3.5rem; }
+
 .nav-link::before {
   content: "  | "; }
 
 .hideBefore::before {
   content: ""; }
 
-img {
-  height: 100%; }
-
-#navbar {
+.navbar {
+  font-family: fontUbuntu;
   position: fixed;
   z-index: 16;
   width: 100%;
-  margin: 0rem;
-  /* display: flex; */
   text-align: justify;
-  justify-content: space-between;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background-color: #790808; }
+  .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc"); }
 
 #navbar *:focus, #language-button-li *:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none; }
-
-.bg-navbar {
-  background-color: #790808; }
 
 /* Two styles for waypoint mechanism to work in JQuery */
 .orange-highlighting {
@@ -58,7 +131,7 @@ img {
 .grey-highlighting {
   color: #d7c8a8; }
 
-#bg-languages {
+.bg-languages {
   background-color: #790808;
   position: absolute;
   /* left: calc(100% - 160px); */
@@ -68,29 +141,6 @@ img {
   border-bottom: 0.125rem solid #f7e4bc;
   border-radius: 1.875rem;
   transform: translate3d(-1.25rem, 2.1875rem, 0rem) !important; }
-
-.navbar .navbar-toggler-icon {
-  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc"); }
-
-/* Content starts here */
-.carousel-caption {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.3);
-  font-size: 2rem;
-  font-style: italic; }
-
-.carousel-indicators li {
-  background-color: #000; }
-
-.carousel-indicators li.active {
-  background-color: #790808; }
-
-.cover-container {
-  padding: 0px;
-  margin: 0px;
-  top: 3.5rem;
-  height: calc(100% - 3.5rem);
-  width: 100%; }
 
 .coach-photo {
   padding: 0.625rem;
@@ -105,10 +155,6 @@ img {
 .picture-topspace {
   margin-top: 1.25rem; }
 
-/* form {
-    display: block;
-    margin: auto;
-} */
 .parallax-background {
   background-image: url("../pictures/1200px-Lanchid_Budapest.jpg");
   -webkit-filter: grayscale(80%);
@@ -126,12 +172,6 @@ img {
   color: #000;
   padding: 3.125rem;
   padding-top: 3.875rem; }
-
-.item {
-  margin: 0rem; }
-
-h2 {
-  text-align: center; }
 
 @media (min-width: 576px) {
   .container {
@@ -153,23 +193,6 @@ h2 {
     max-width: 100%;
     max-height: 100%; } }
 
-.make-this-cover, #carouselExampleIndicators, .container, .carousel-inner, .carousel-item, img {
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 100%;
-  height: 100%; }
-
-.carousel-inner > .carousel-item {
-  -webkit-transition-duration: 1.5s;
-  -moz-transition-duration: 1.5s;
-  -o-transition-duration: 1.5s;
-  transition-duration: 1.5s; }
-
-iframe {
-  width: 100%;
-  max-width: 600px;
-  height: 450px; }
-
 .survivalKits > img {
   opacity: 0.8;
   cursor: pointer; }
@@ -189,6 +212,9 @@ iframe {
   animation-duration: 0.5s;
   animation-iteration-count: 1; }
 
+.expanded-image-size {
+  width: 100%; }
+
 /* Expanding image text */
 #imgtext {
   position: absolute;
@@ -201,8 +227,9 @@ iframe {
 /* Closable button inside the image */
 .close-button {
   position: absolute;
-  top: .625rem;
-  right: .9375rem;
+  top: 1.1rem;
+  right: 1.2rem;
+  opacity: 0.5;
   color: #000;
   font-size: 3.125rem;
   font-weight: bold;
@@ -216,18 +243,6 @@ iframe {
   padding: 0.625rem;
   background-color: #fff;
   display: block; }
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
-
-@keyframes zoom {
-  from {
-    transform: scale(0); }
-  to {
-    transform: scale(1); } }
 
 /* download button */
 .glyph-icon {
@@ -296,15 +311,13 @@ a#language-button:hover {
   font-weight: bold;
   font-style: italic; }
 
-#navbar {
-  font-family: fontUbuntu; }
-
 @font-face {
   font-family: fontUbuntu;
   src: url(../fonts/Ubuntu-Medium.ttf); }
 
 .footer {
   color: #f7e4bc;
+  background-color: #790808;
   text-align: center;
   padding: 0.625rem; }
 
