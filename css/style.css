@@ -62,6 +62,9 @@ iframe {
 .list_padding-left {
   padding-left: 2rem; }
 
+.topspace-small {
+  margin-top: 1.25rem; }
+
 @font-face {
   font-family: fontUbuntu;
   src: url(../fonts/Ubuntu-Medium.ttf); }
@@ -216,31 +219,29 @@ a#language-button:hover {
   padding-top: 3.875rem;
   padding-bottom: 4rem; }
 
+.b-coach__photo {
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all .2s; }
+  .b-coach__photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+
+.b-coach__name {
+  font-size: 1.375rem; }
+
+.b-coach__text--padding {
+  padding-left: 3rem; }
+
 #navbar *:focus, #language-button-li *:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none; }
 
-.b-coach__photo {
-  padding: 0.625rem;
-  border-radius: 0.3125rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  transition: all .2s;
-  outline-offset: .5rem; }
-  .b-coach__photo:hover {
-    outline: 0.25rem solid rgba(255, 165, 0, 0.6);
-    transform: translateX(-1rem) scale(1.05);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
-
-.b-coach__name {
-  font-size: 1.375rem; }
-
 .container > hr {
   border-width: 0.1875rem; }
-
-.picture-topspace {
-  margin-top: 1.25rem; }
 
 @media (min-width: 576px) {
   .container {

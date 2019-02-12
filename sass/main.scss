@@ -13,16 +13,15 @@
 @import "layout/navbar";
 @import "layout/section";
 
-@import "pages/coach"
+@import "pages/coach";
 
 
-
-/* #navbar *:focus, #language-button-li *:focus {
+#navbar *:focus, #language-button-li *:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     outline: none;
-}*/
+}
 
 .container > hr {
     border-width: 0.1875rem;
