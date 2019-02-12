@@ -1,9 +1,12 @@
 .b-coach {
     &__photo {
-    padding: 0.625rem;
-    border-radius: 0.3125rem;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-    transition: all .2s;    
+        width: 70%;
+        padding: 0.625rem;
+        margin-bottom: 1.5rem;
+        margin-right: 2rem;
+        border-radius: 0.3125rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        transition: all .2s;    
 
         &:hover {
             transform: scale(1.05);
@@ -15,7 +18,7 @@
         font-size: 1.375rem;
     }
 
-    &__text--padding {
-        padding-left: 3rem;
-    }   
+    // &__text--padding {
+    //     padding-left: 3rem;
+    // }   
 }
