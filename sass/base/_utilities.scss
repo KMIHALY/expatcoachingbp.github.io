@@ -1,0 +1,18 @@
+.parallax-background {
+    background-image: url("../pictures/1200px-Lanchid_Budapest.jpg");
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
+    height: 50%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list_padding-left {
+    padding-left: 2rem;
+}
+
+.topspace-small {
+    margin-top: 1.25rem;
+}

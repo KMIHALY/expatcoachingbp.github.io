@@ -1,0 +1,11 @@
+.card {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    background-color: $color-white;
+    display: block;
+
+    .download-button-container {
+        display: flex;
+        justify-content: center;
+    }
+}

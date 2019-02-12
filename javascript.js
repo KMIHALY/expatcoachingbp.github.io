@@ -35,10 +35,10 @@ const listItemFinder = (waypointId) => {
 let makeListItemHighlighted = (currentValue) => {
     waypointIds.map(
         (currentValue) => {
-            $(listItemFinder(currentValue)).removeClass('orange-highlighting').addClass('grey-highlighting');
+            $(listItemFinder(currentValue)).removeClass('menu-item-orange-highlighting').addClass('menu-item-grey-highlighting');
         }
     );
-    $(listItemFinder(currentValue)).removeClass('grey-highlighting').addClass('orange-highlighting');
+    $(listItemFinder(currentValue)).removeClass('menu-item-grey-highlighting').addClass('menu-item-orange-highlighting');
 }
 
 $(String(waypointIds[0])).waypoint(

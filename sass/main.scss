@@ -1,131 +1,31 @@
 @import "abstracts/variables";
-@import "base/base";
+
 @import "base/animations";
-@import "components/carousel";
+@import "base/base";
+@import "base/utilities";
+@import "base/typography";
 
-@media (min-width: 1050px) {
-	.navbar-expand-xl {
-	  -ms-flex-flow: row nowrap;
-	  flex-flow: row nowrap;
-	  -ms-flex-pack: start;
-	  justify-content: flex-start;
-	}
-	.navbar-expand-xl .navbar-nav {
-	  -ms-flex-direction: row;
-	  flex-direction: row;
-	}
-	.navbar-expand-xl .navbar-nav .dropdown-menu {
-	  position: absolute;
-	}
-	.navbar-expand-xl .navbar-nav .nav-link {
-	  padding-right: 0.5rem;
-	  padding-left: 0;
-	}
-	.navbar-expand-xl > .container,
-	.navbar-expand-xl > .container-fluid {
-	  -ms-flex-wrap: nowrap;
-	  flex-wrap: nowrap;
-	}
-	.navbar-expand-xl .navbar-collapse {
-	  display: -ms-flexbox !important;
-	  display: flex !important;
-	  -ms-flex-preferred-size: auto;
-	  flex-basis: auto;
-	}
-	.navbar-expand-xl .navbar-toggler {
-	  display: none;
-	}
-}
+@import "components/contact-button";
 
-.behind-navbar-placeholder {
-    width: 100%;
-    height: 3.5rem;
-}
+@import "layout/card";
+@import "layout/carousel";
+@import "layout/language_button";
+@import "layout/navbar";
+@import "layout/section";
 
-.nav-link::before {
-    content: "  | ";
-}
+@import "pages/coach"
 
-.hideBefore::before {
-    content:"";
-}
 
-.navbar {
-    font-family: fontUbuntu;
-    position: fixed;
-    z-index: 16;
-    width: 100%;
-    text-align: justify;
-    vertical-align: middle;
-    background-color: $color-brown;
 
-    &-toggler-icon {
-        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc');
-    }
-}
-
-#navbar *:focus, #language-button-li *:focus {
+/* #navbar *:focus, #language-button-li *:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     outline: none;
-}
-
-/* Two styles for waypoint mechanism to work in JQuery */
-.orange-highlighting {
-    color: $color-orange !important;
-}
-
-.grey-highlighting {
-    color: $color-lightgrey;
-}
-
-.bg-languages {
-    background-color: $color-brown;
-    position: absolute;
-    /* left: calc(100% - 160px); */
-    padding: 0.625rem;
-    border-left: 0.125rem solid $color-lightbrown;
-    border-right: 0.125rem solid $color-lightbrown;
-    border-bottom: 0.125rem solid $color-lightbrown; 
-    border-radius: 1.875rem;
-    transform: translate3d(-1.25rem, 2.1875rem, 0rem) !important;
-}
-
-.coach-photo {
-    padding: 0.625rem;
-    border-radius: 0.3125rem;
-}
-
-.coach-name {
-    font-size: 1.375rem;
-}
+}*/
 
 .container > hr {
     border-width: 0.1875rem;
-}
-
-.picture-topspace {
-    margin-top: 1.25rem;
-}
-
-.parallax-background {
-    background-image: url("../pictures/1200px-Lanchid_Budapest.jpg");
-    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%);
-    height: 50%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.text-container {
-    height: fit-content;
-    background-color: $color-whitesmoke;
-    color: $color-black;
-    padding: 3.125rem;
-    padding-top: 3.875rem;
 }
 
 
@@ -134,6 +34,11 @@
         max-width: 100%; 
         max-height: 100%;
     }
+
+    .text-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
   }
   
   @media (min-width: 768px) {
@@ -141,13 +46,22 @@
         max-width: 100%; 
         max-height: 100%;
     }
-  
+
+    .text-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
   }
   
   @media (min-width: 992px) {
     .container {
         max-width: 100%; 
         max-height: 100%;
+    }
+
+    .text-container {
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
   }
   
@@ -156,7 +70,16 @@
         max-width: 100%; 
         max-height: 100%;        
     }
+
+    .text-container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
   }
+
+.list_padding-left {
+    padding-left: 2rem;
+}
 
 .survivalKits > img {
     opacity: 0.8; 
@@ -172,7 +95,7 @@
     position: relative;
     background-color: $color-white;
     border: solid $color-lightgrey .0625rem;
-    padding: .9375rem;
+    padding: 1rem;
     margin: auto;
     display: none;
     animation-name: zoom;
@@ -187,10 +110,10 @@
 /* Expanding image text */
 #imgtext {
     position: absolute;
-    bottom: .9375rem;
-    left: .9375rem;
+    bottom: 1rem;
+    left: 1rem;
     color: $color-black;
-    font-size: .9375rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -210,13 +133,6 @@
     text-align: center;
 }
 
-.card {
-    margin: 0.625rem;
-    padding: 0.625rem;
-    background-color: $color-white;
-    display: block;
-}
- 
 /* download button */
 .glyph-icon {
     width: 25px;
@@ -225,12 +141,7 @@
     display: inline-block;
 }
 
-.glyph-container {
-    display: flex;
-    justify-content: center;
-}
-
-/* phone icon */
+/* phone and mail icons */
 .glyph-icon2 {
     width: 24px;
     height: 16px;
@@ -247,46 +158,8 @@
 }
 
 /* language selection */
-
-.language-image {
-    width: 38px;
-    height: 38px;
-}
-
-.no-bullet {
-    list-style-type: none;
-    margin: 0rem;
-    margin-left: .9375rem;
-    padding: 0rem;
-    position: fixed;
-    z-index: 17;
-    left: calc(100% - 10rem);
-    top: .625rem;
-}
-
 .dropdown-toggle::after {
     vertical-align: 0rem;
-}
-
-a#language-button:hover {
-    text-decoration: none;
-}
-
-
-#coaches a:link, a:visited, a:active,
-#forOrganizations a:link, a:visited, a:active {
-    color: $color-lightbrown;
-    background-color: $color-brown ;
-    border-style: none;
-    font-weight: bold;
-}
-
-#coaches a:hover, 
-#forOrganizations a:hover {
-    color: $color-brown;
-    background-color: $color-darker-orange;
-    text-decoration: none;
-    border-style: none;
 }
 
 .quote {
@@ -296,10 +169,7 @@ a#language-button:hover {
     font-style: italic;
 }
 
-@font-face {
-font-family: fontUbuntu;
-src: url(../fonts/Ubuntu-Medium.ttf);
-}
+
 
 .footer {
     color: $color-lightbrown;

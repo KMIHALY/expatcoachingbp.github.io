@@ -1,0 +1,21 @@
+.b-coach {
+    &__photo {
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    transition: all .2s;
+    outline-offset: .5rem;
+
+        &:hover {
+            outline: 0.25rem solid rgba($color-orange, .6);
+            transform: translateX(-1rem) scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+        }
+    }
+
+    &__name {
+        font-size: 1.375rem;
+    }
+
+    
+}

@@ -1,0 +1,35 @@
+.contact-button {
+    &:link, &:visited, &:active {
+        //display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-lightbrown;
+        background-color: $color-brown;
+        border-style: none;
+        font-weight: bold;
+        transition: all .2s;
+    }
+
+    &:hover {
+        color: $color-brown;
+        background-color: $color-darker-orange;
+        text-decoration: none;
+        border-style: none;
+        transform: translateX(-50%) translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: translateX(-50%) scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateX(-50%) translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+}
+

@@ -1,0 +1,71 @@
+
+.behind-navbar-placeholder {
+    width: 100%;
+    height: 3.5rem;
+}
+
+@media (min-width: 1050px) {
+	.navbar-expand-xl {
+	  -ms-flex-flow: row nowrap;
+	  flex-flow: row nowrap;
+	  -ms-flex-pack: start;
+	  justify-content: flex-start;
+	}
+	.navbar-expand-xl .navbar-nav {
+	  -ms-flex-direction: row;
+	  flex-direction: row;
+	}
+	.navbar-expand-xl .navbar-nav .dropdown-menu {
+	  position: absolute;
+	}
+	.navbar-expand-xl .navbar-nav .nav-link {
+	  padding-right: 0.5rem;
+	  padding-left: 0;
+	}
+	.navbar-expand-xl > .container,
+	.navbar-expand-xl > .container-fluid {
+	  -ms-flex-wrap: nowrap;
+	  flex-wrap: nowrap;
+	}
+	.navbar-expand-xl .navbar-collapse {
+	  display: -ms-flexbox !important;
+	  display: flex !important;
+	  -ms-flex-preferred-size: auto;
+	  flex-basis: auto;
+	}
+	.navbar-expand-xl .navbar-toggler {
+	  display: none;
+	}
+}
+
+.navbar {
+	font-family: fontUbuntu;
+	position: fixed;
+	z-index: 16;
+	width: 100%;
+	text-align: justify;
+	vertical-align: middle;
+	background-color: $color-brown;
+
+	&-toggler-icon {
+		background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc');
+	}
+	
+	.nav-link::before {
+		content: "  | ";
+	}
+
+	#li-home.nav-link::before {
+		content: "";
+	}
+}
+
+/* Two styles for waypoint mechanism to work in JQuery */
+.menu-item-orange-highlighting {
+	color: $color-orange !important;
+}
+
+.menu-item-grey-highlighting {
+	color: $color-lightgrey;
+}
+

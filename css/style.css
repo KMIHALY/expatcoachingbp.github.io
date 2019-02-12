@@ -1,3 +1,15 @@
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -18,6 +30,9 @@ h4 {
   text-align: center;
   color: #e67a00; }
 
+hr {
+  position: relative; }
+
 p {
   text-align: justify;
   text-justify: inter-word; }
@@ -33,17 +48,58 @@ iframe {
   padding: 1rem;
   background-color: #fff; }
 
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
+.parallax-background {
+  background-image: url("../pictures/1200px-Lanchid_Budapest.jpg");
+  -webkit-filter: grayscale(80%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-@keyframes zoom {
-  from {
-    transform: scale(0); }
-  to {
-    transform: scale(1); } }
+.list_padding-left {
+  padding-left: 2rem; }
+
+@font-face {
+  font-family: fontUbuntu;
+  src: url(../fonts/Ubuntu-Medium.ttf); }
+
+.contact-button:link, .contact-button:visited, .contact-button:active {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f7e4bc;
+  background-color: #790808;
+  border-style: none;
+  font-weight: bold;
+  transition: all .2s; }
+
+.contact-button:hover {
+  color: #790808;
+  background-color: #e67a00;
+  text-decoration: none;
+  border-style: none;
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .contact-button:hover::after {
+    transform: translateX(-50%) scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.contact-button:active, .contact-button:focus {
+  outline: none;
+  transform: translateX(-50%) translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.card {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  background-color: #fff;
+  display: block; }
+  .card .download-button-container {
+    display: flex;
+    justify-content: center; }
 
 .carousel-container {
   height: calc(100% - 3.5rem);
@@ -71,6 +127,38 @@ iframe {
     -o-transition-duration: 1.5s;
     transition-duration: 1.5s; }
 
+.bg-languages {
+  background-color: #790808;
+  position: absolute;
+  /* left: calc(100% - 160px); */
+  padding: 0.625rem;
+  border-left: 0.125rem solid #f7e4bc;
+  border-right: 0.125rem solid #f7e4bc;
+  border-bottom: 0.125rem solid #f7e4bc;
+  border-radius: 1.875rem;
+  transform: translate3d(-1.25rem, 2.1875rem, 0rem) !important; }
+
+.language-image {
+  width: 38px;
+  height: 38px; }
+
+.no-bullet {
+  list-style-type: none;
+  margin: 0rem;
+  margin-left: .9375rem;
+  padding: 0rem;
+  position: fixed;
+  z-index: 17;
+  left: calc(100% - 10rem);
+  top: .625rem; }
+
+a#language-button:hover {
+  text-decoration: none; }
+
+.behind-navbar-placeholder {
+  width: 100%;
+  height: 3.5rem; }
+
 @media (min-width: 1050px) {
   .navbar-expand-xl {
     -ms-flex-flow: row nowrap;
@@ -97,16 +185,6 @@ iframe {
   .navbar-expand-xl .navbar-toggler {
     display: none; } }
 
-.behind-navbar-placeholder {
-  width: 100%;
-  height: 3.5rem; }
-
-.nav-link::before {
-  content: "  | "; }
-
-.hideBefore::before {
-  content: ""; }
-
 .navbar {
   font-family: fontUbuntu;
   position: fixed;
@@ -117,6 +195,26 @@ iframe {
   background-color: #790808; }
   .navbar-toggler-icon {
     background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=f7e4bc"); }
+  .navbar .nav-link::before {
+    content: "  | "; }
+  .navbar #li-home.nav-link::before {
+    content: ""; }
+
+/* Two styles for waypoint mechanism to work in JQuery */
+.menu-item-orange-highlighting {
+  color: #ffa500 !important; }
+
+.menu-item-grey-highlighting {
+  color: #d7c8a8; }
+
+.text-container {
+  height: fit-content;
+  background-color: #f5f5f5;
+  color: #000;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 3.875rem;
+  padding-bottom: 4rem; }
 
 #navbar *:focus, #language-button-li *:focus {
   -webkit-appearance: none;
@@ -124,29 +222,18 @@ iframe {
   appearance: none;
   outline: none; }
 
-/* Two styles for waypoint mechanism to work in JQuery */
-.orange-highlighting {
-  color: #ffa500 !important; }
-
-.grey-highlighting {
-  color: #d7c8a8; }
-
-.bg-languages {
-  background-color: #790808;
-  position: absolute;
-  /* left: calc(100% - 160px); */
+.b-coach__photo {
   padding: 0.625rem;
-  border-left: 0.125rem solid #f7e4bc;
-  border-right: 0.125rem solid #f7e4bc;
-  border-bottom: 0.125rem solid #f7e4bc;
-  border-radius: 1.875rem;
-  transform: translate3d(-1.25rem, 2.1875rem, 0rem) !important; }
+  border-radius: 0.3125rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all .2s;
+  outline-offset: .5rem; }
+  .b-coach__photo:hover {
+    outline: 0.25rem solid rgba(255, 165, 0, 0.6);
+    transform: translateX(-1rem) scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
 
-.coach-photo {
-  padding: 0.625rem;
-  border-radius: 0.3125rem; }
-
-.coach-name {
+.b-coach__name {
   font-size: 1.375rem; }
 
 .container > hr {
@@ -155,43 +242,40 @@ iframe {
 .picture-topspace {
   margin-top: 1.25rem; }
 
-.parallax-background {
-  background-image: url("../pictures/1200px-Lanchid_Budapest.jpg");
-  -webkit-filter: grayscale(80%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(80%);
-  height: 50%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.text-container {
-  height: fit-content;
-  background-color: #f5f5f5;
-  color: #000;
-  padding: 3.125rem;
-  padding-top: 3.875rem; }
-
 @media (min-width: 576px) {
   .container {
     max-width: 100%;
-    max-height: 100%; } }
+    max-height: 100%; }
+  .text-container {
+    padding-left: 4rem;
+    padding-right: 4rem; } }
 
 @media (min-width: 768px) {
   .container {
     max-width: 100%;
-    max-height: 100%; } }
+    max-height: 100%; }
+  .text-container {
+    padding-left: 4rem;
+    padding-right: 4rem; } }
 
 @media (min-width: 992px) {
   .container {
     max-width: 100%;
-    max-height: 100%; } }
+    max-height: 100%; }
+  .text-container {
+    padding-left: 8rem;
+    padding-right: 8rem; } }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 100%;
-    max-height: 100%; } }
+    max-height: 100%; }
+  .text-container {
+    padding-left: 10rem;
+    padding-right: 10rem; } }
+
+.list_padding-left {
+  padding-left: 2rem; }
 
 .survivalKits > img {
   opacity: 0.8;
@@ -205,7 +289,7 @@ iframe {
   position: relative;
   background-color: #fff;
   border: solid #d7c8a8 0.0625rem;
-  padding: .9375rem;
+  padding: 1rem;
   margin: auto;
   display: none;
   animation-name: zoom;
@@ -218,10 +302,10 @@ iframe {
 /* Expanding image text */
 #imgtext {
   position: absolute;
-  bottom: .9375rem;
-  left: .9375rem;
+  bottom: 1rem;
+  left: 1rem;
   color: #000;
-  font-size: .9375rem;
+  font-size: 1rem;
   font-weight: bold; }
 
 /* Closable button inside the image */
@@ -238,12 +322,6 @@ iframe {
 .contact-paragraph {
   text-align: center; }
 
-.card {
-  margin: 0.625rem;
-  padding: 0.625rem;
-  background-color: #fff;
-  display: block; }
-
 /* download button */
 .glyph-icon {
   width: 25px;
@@ -251,11 +329,7 @@ iframe {
   position: relative;
   display: inline-block; }
 
-.glyph-container {
-  display: flex;
-  justify-content: center; }
-
-/* phone icon */
+/* phone and mail icons */
 .glyph-icon2 {
   width: 24px;
   height: 16px;
@@ -271,49 +345,14 @@ iframe {
   display: inline-block; }
 
 /* language selection */
-.language-image {
-  width: 38px;
-  height: 38px; }
-
-.no-bullet {
-  list-style-type: none;
-  margin: 0rem;
-  margin-left: .9375rem;
-  padding: 0rem;
-  position: fixed;
-  z-index: 17;
-  left: calc(100% - 10rem);
-  top: .625rem; }
-
 .dropdown-toggle::after {
   vertical-align: 0rem; }
-
-a#language-button:hover {
-  text-decoration: none; }
-
-#coaches a:link, a:visited, a:active,
-#forOrganizations a:link, a:visited, a:active {
-  color: #f7e4bc;
-  background-color: #790808;
-  border-style: none;
-  font-weight: bold; }
-
-#coaches a:hover,
-#forOrganizations a:hover {
-  color: #790808;
-  background-color: #e67a00;
-  text-decoration: none;
-  border-style: none; }
 
 .quote {
   padding: 1.875rem;
   color: #e67a00;
   font-weight: bold;
   font-style: italic; }
-
-@font-face {
-  font-family: fontUbuntu;
-  src: url(../fonts/Ubuntu-Medium.ttf); }
 
 .footer {
   color: #f7e4bc;
