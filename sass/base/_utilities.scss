@@ -16,3 +16,59 @@
 .topspace-small {
     margin-top: 1.25rem;
 }
+
+.quote {
+    padding: 1.875rem;
+    color: $color-darker-orange;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.small-rule {
+    border-width: 2px;
+}
+
+.survival_kit__img {
+    opacity: 0.8; 
+    cursor: pointer; 
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.dropdown-toggle::after {
+    vertical-align: 0rem;
+}
+
+.contact-paragraph {
+    text-align: center;
+}
+
+#navbarMenuButton:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+
+    & :first-child {
+    box-shadow:  0rem 0rem 2rem $color-white;
+    }
+}
+
+.navbar a:link, .footer a:link, #language-button-li a {
+    color: $color-lightbrown;
+    text-decoration: none;
+}
+
+.navbar a:visited, .footer a:visited, #language-button-li a {
+    color: $color-lightbrown;
+}
+
+.navbar a:hover, .footer a:hover, #language-button-li a {
+    color: $color-white;
+}
+
+.navbar a:active, .footer a:active, #language-button-li a {
+    color: $color-white;
+}

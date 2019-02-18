@@ -3,6 +3,18 @@
     padding: 0px;
 }
 
+*:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow:  0rem 0rem 1rem $color-brown;
+
+    a {
+        text-shadow: 0rem 0rem 1rem $color-white, 0rem 0rem 1rem $color-white;
+    }
+}
+
 body, html {
     height: 100%;
     font-size: 100%;
@@ -26,6 +38,7 @@ h4 {
 
 hr {
     position: relative;
+    border-width: 4px;
 }
 
 p {
